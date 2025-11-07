@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "influencer": "I'm an influencer",
+    "signup": "Sign up",
+    "login": "Log in"
+  },
+  "hero": {
+    "title": "Connect your restaurant with trending influencers",
+    "subtitle": "BEHYPE instantly connects you with influencers ready to discover and promote your establishment",
+    "cta": "Start for free",
+    "demo": "Request a demo"
+  },
+  "footer": {
+    "tagline": "The #1 platform connecting restaurants and food influencers",
+    "pages": "Pages",
+    "home": "Home",
+    "pricing": "Pricing",
+    "demo": "Request a demo",
+    "legal": "Legal",
+    "mentions": "Legal mentions",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies",
+    "terms": "Terms & Conditions",
+    "location": "Aix-en-Provence",
+    "copyright": "All rights reserved",
+    "made": "Made with ❤️ in France"
+  }
+}

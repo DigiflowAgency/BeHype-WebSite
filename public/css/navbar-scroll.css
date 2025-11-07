@@ -1,0 +1,120 @@
+/* Enhanced Navbar Scroll Styles */
+
+.behype_navbar {
+  background-color: rgba(41, 96, 246, 0.95) !important; /* BEHYPE Blue #2960f6 */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.behype_navbar.scrolled {
+  background-color: rgba(15, 23, 42, 0.98) !important; /* Dark blue #0f172a */
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  min-height: 72px !important;
+  padding: 16px 5% !important;
+}
+
+/* Smooth transition for navbar container */
+.behype_navbar-container {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Logo smooth scaling on scroll */
+.behype_logo {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.behype_navbar.scrolled .behype_logo {
+  width: 9rem;
+  height: 2.7rem;
+}
+
+/* Enhance button styles on scrolled navbar */
+.behype_navbar.scrolled .navbar_button,
+.behype_navbar.scrolled .navbar_button-alternate {
+  transition: all 0.2s ease;
+}
+
+.behype_navbar.scrolled .navbar_button {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.behype_navbar.scrolled .navbar_button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.behype_navbar.scrolled .navbar_button-alternate {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #19316c;
+}
+
+.behype_navbar.scrolled .navbar_button-alternate:hover {
+  background-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Nav links subtle enhancement */
+.behype_nav-link {
+  transition: all 0.2s ease;
+}
+
+.behype_navbar.scrolled .behype_nav-link {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.behype_navbar.scrolled .behype_nav-link:hover {
+  transform: translateY(-1px);
+}
+
+/* Language selector enhancement */
+.behype_navbar.scrolled .language-selector-html .language-selector-button-html {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.behype_navbar.scrolled .language-selector-html .language-selector-button-html:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Mobile menu button enhancement */
+.behype_navbar.scrolled .f-navigation-menu-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.behype_navbar.scrolled .f-navigation-menu-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .behype_navbar.scrolled {
+    min-height: 64px !important;
+    padding: 12px 4% !important;
+  }
+
+  .behype_navbar.scrolled .behype_logo {
+    width: 8rem;
+    height: 2.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .behype_navbar.scrolled {
+    min-height: 60px !important;
+    padding: 10px 4% !important;
+  }
+
+  .behype_navbar.scrolled .behype_logo {
+    width: 7.5rem;
+    height: 2.25rem;
+  }
+}

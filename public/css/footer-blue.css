@@ -1,0 +1,93 @@
+/* Footer Blue Background - BeHype Style */
+
+.footer-section-wrap {
+  position: relative;
+  background-color: #2960f6 !important;
+}
+
+.footer-section {
+  background: #2960f6 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-area {
+  background-color: transparent !important;
+}
+
+/* Override any existing footer backgrounds */
+.footer-bg-primary,
+.footer-bg-secondary {
+  display: none !important;
+}
+
+/* Ensure text remains visible on blue background */
+.footer-widget-title,
+.footer-widget-text,
+.footer-contact-text,
+.footer-contact-link,
+.copyright-text {
+  color: #ffffff !important;
+}
+
+/* Adjust hover states for links on blue background */
+.footer-widget-link:hover .footer-widget-text {
+  color: #e0e7ff !important;
+}
+
+.footer-contact-link:hover {
+  color: #e0e7ff !important;
+}
+
+.copyright-link {
+  color: #a5b4fc !important;
+}
+
+.copyright-link:hover {
+  color: #ffffff !important;
+}
+
+/* Social icons stay white */
+.footer-social-icon {
+  filter: brightness(1);
+}
+
+.footer-social-wrap:hover .footer-social-icon {
+  filter: brightness(1.2);
+}
+
+/* Widget dots */
+.footer-widget-dot {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Responsive - force blue background in all media queries */
+@media (max-width: 991px) {
+  .footer-section-wrap {
+    background-color: #2960f6 !important;
+  }
+
+  .footer-section {
+    background: #2960f6 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-section-wrap {
+    background-color: #2960f6 !important;
+  }
+
+  .footer-section {
+    background: #2960f6 !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer-section-wrap {
+    background-color: #2960f6 !important;
+  }
+
+  .footer-section {
+    background: #2960f6 !important;
+  }
+}

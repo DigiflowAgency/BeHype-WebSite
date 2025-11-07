@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Traductions BEHYPE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #2465f7;
+            text-align: center;
+        }
+        .lang-selector {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .lang-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background: #2465f7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .lang-btn:hover {
+            background: #1d4ec7;
+        }
+        .lang-btn.active {
+            background: #163aa6;
+            box-shadow: 0 4px 12px rgba(36, 101, 247, 0.3);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2465f7;
+            border-bottom: 2px solid #2465f7;
+            padding-bottom: 10px;
+        }
+        .test-item {
+            padding: 10px;
+            margin: 10px 0;
+            background: #f9f9f9;
+            border-left: 3px solid #2465f7;
+        }
+        .key {
+            font-family: monospace;
+            color: #666;
+            font-size: 12px;
+        }
+        .status {
+            text-align: center;
+            padding: 20px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌍 Test du Système de Traduction BEHYPE</h1>
+    
+    <div class="status">
+        ✅ 52 éléments traduits en Français, Anglais et Espagnol
+    </div>
+
+    <div class="lang-selector">
+        <button class="lang-btn active" onclick="changeLanguage('fr')" id="btn-fr">🇫🇷 Français</button>
+        <button class="lang-btn" onclick="changeLanguage('en')" id="btn-en">🇬🇧 English</button>
+        <button class="lang-btn" onclick="changeLanguage('es')" id="btn-es">🇪🇸 Español</button>
+    </div>
+
+    <div class="section">
+        <h2>Navigation</h2>
+        <div class="test-item">
+            <span class="key">nav.pricing:</span> <span data-translate="nav.pricing">Tarifs</span>
+        </div>
+        <div class="test-item">
+            <span class="key">nav.testimonials:</span> <span data-translate="nav.testimonials">Témoignages</span>
+        </div>
+        <div class="test-item">
+            <span class="key">nav.influencer:</span> <span data-translate="nav.influencer">Je suis influenceur</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Hero Section</h2>
+        <div class="test-item">
+            <span class="key">hero.partners:</span> <span data-translate="hero.partners">+500 établissements partenaires</span>
+        </div>
+        <div class="test-item">
+            <span class="key">hero.title:</span> <span data-translate="hero.title">Devenez l'adresse incontournable grâce au pouvoir de l'influence</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Benefits Section</h2>
+        <div class="test-item">
+            <span class="key">benefits.header:</span> <span data-translate="benefits.header">+3 000 Créateurs de contenu & Influenceurs disponibles</span>
+        </div>
+        <div class="test-item">
+            <span class="key">benefits.card1.title:</span> <span data-translate="benefits.card1.title">Augmentez votre CA</span>
+        </div>
+        <div class="test-item">
+            <span class="key">benefits.card2.title:</span> <span data-translate="benefits.card2.title">Multipliez vos réservations</span>
+        </div>
+        <div class="test-item">
+            <span class="key">benefits.card3.title:</span> <span data-translate="benefits.card3.title">Recevez des influenceurs à moindre coût</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Tutorial Section</h2>
+        <div class="test-item">
+            <span class="key">tutorial.title:</span> <span data-translate="tutorial.title">BEHYPE est la plateforme dont vous avez toujours rêvé</span>
+        </div>
+        <div class="test-item">
+            <span class="key">tutorial.step1.title:</span> <span data-translate="tutorial.step1.title">Créez votre fiche établissement</span>
+        </div>
+        <div class="test-item">
+            <span class="key">tutorial.step2.title:</span> <span data-translate="tutorial.step2.title">Recevez des demandes de réservations</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Testimonials</h2>
+        <div class="test-item">
+            <span class="key">testimonials.title:</span> <span data-translate="testimonials.title">Ils utilisent BeHype et ça change tout !</span>
+        </div>
+    </div>
+
+    <script src="js/complete-translations.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            localStorage.setItem('behype_language', lang);
+            window.dispatchEvent(new CustomEvent('languageChange', { detail: lang }));
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
