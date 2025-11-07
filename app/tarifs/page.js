@@ -9,7 +9,7 @@ export default function Tarifs() {
         height: '100vh',
         border: 'none'
       }}
-      sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
+      sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
     />
   )
 }
