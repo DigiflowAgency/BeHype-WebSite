@@ -1677,6 +1677,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (form) {
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
+      e.stopImmediatePropagation(); // Empêcher Webflow de gérer le formulaire
+
+      // Cacher immédiatement les messages (avant même de récupérer les valeurs)
+      successMessage.style.display = 'none';
+      errorMessage.style.display = 'none';
 
       // Récupérer les valeurs du formulaire
       const etablissement = document.getElementById('Etablissement').value;
@@ -1692,10 +1697,6 @@ document.addEventListener("DOMContentLoaded", function () {
         prenom: prenom,
         offre: selectedOffer
       };
-
-      // Cacher les messages précédents
-      successMessage.style.display = 'none';
-      errorMessage.style.display = 'none';
 
       // Changer le texte du bouton
       const submitButton = form.querySelector('input[type="submit"]');
@@ -1714,12 +1715,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         const data = await response.json();
+        console.log('Response status:', response.status);
+        console.log('Response ok:', response.ok);
+        console.log('Response data:', data);
 
         if (response.ok && data.success) {
           // Succès
           form.style.display = 'none';
           successMessage.style.display = 'block';
+          errorMessage.style.display = 'none'; // Forcer le message d'erreur à rester caché
           form.reset();
+
+          // Continuer à cacher le message d'erreur (au cas où Webflow essaie de l'afficher)
+          setTimeout(() => {
+            errorMessage.style.display = 'none';
+          }, 100);
 
           // Réinitialiser le bouton après un délai
           setTimeout(() => {
