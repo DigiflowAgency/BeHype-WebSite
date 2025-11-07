@@ -50,9 +50,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
+        {/* Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T3PJSCWZ');
+          `}
+        </Script>
+
+        {/* Google Analytics */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-51GFV221RX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-CWJWKLZM41"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -60,11 +72,35 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-51GFV221RX');
+            gtag('set', 'developer_id.dZGVlNj', true);
+            gtag('config', 'G-CWJWKLZM41');
+          `}
+        </Script>
+
+        {/* Hotjar Tracking Code */}
+        <Script id="hotjar" strategy="afterInteractive">
+          {`
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:6365087,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </Script>
       </head>
       <body suppressHydrationWarning style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T3PJSCWZ"
+            height="0"
+            width="0"
+            style={{display: 'none', visibility: 'hidden'}}
+          />
+        </noscript>
         {children}
       </body>
     </html>
