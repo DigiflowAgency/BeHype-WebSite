@@ -125,6 +125,7 @@ export default function HomeNavbar() {
               <Link href="/offres" className="behype_nav-link w-nav-link">Tarifs</Link>
               <Link href="/testimonials" className="behype_nav-link w-nav-link">Témoignages</Link>
               <Link href="/influencer" className="behype_nav-link w-nav-link">Je suis influenceur</Link>
+              <Link href="/calendly" className="behype_nav-link w-nav-link">Démo</Link>
             </div>
           </nav>
           <Link href="/" aria-current="page" className="behype_nav-logo w-inline-block w--current">
