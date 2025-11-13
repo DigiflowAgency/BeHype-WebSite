@@ -16,8 +16,8 @@
       id: 2,
       name: 'Marta',
       role: 'Gérante du restaurant L\'AUTREFOIS',
-      logo: '/images/284x140-2.png',
-      thumbnail: 'https://image-flow.fr/uploads/l-expe-rience-fa4f8820-cb62-425f-800c-243dfcecda3f.webp',
+      logo: 'https://image-flow.fr/uploads/lautrefois-logo-e0db6433-d637-4514-9fb9-443580d14939.webp',
+      thumbnail: 'https://image-flow.fr/uploads/capture-d-e-cran-2025-11-13-a-13-28-20-959e4dac-e517-47c0-893e-870e88423c01.webp',
       videoUrl: 'https://image-flow.fr/uploads/l-autrefois-testimonial-d6f7a100-c4b6-4f5d-9f6a-470f4be3633e.mp4',
       quote: "1 million de vue sur tiktok, 750k sur instagram, je suis ravie de travailler avec BE HYPE"
     },
@@ -25,8 +25,8 @@
       id: 3,
       name: 'Alexandre',
       role: 'Gérant du restaurant COME PAPA',
-      logo: '/images/SARBACANE.avif',
-      thumbnail: 'https://image-flow.fr/uploads/l-expe-rience-fa4f8820-cb62-425f-800c-243dfcecda3f.webp',
+      logo: 'https://image-flow.fr/uploads/come-papa-logo-9011bed7-0fae-4ce2-9fc8-7063a8fc3a30.webp',
+      thumbnail: 'https://image-flow.fr/uploads/capture-d-e-cran-2025-11-13-a-13-26-54-731607b5-5d3d-46eb-ac37-e2e0bb32ae1e.webp',
       videoUrl: 'https://image-flow.fr/uploads/downloadgram-org-aqn7v7dsqcnp-gyzekbi-uniezwtneg5l-006827b3-55a7-4e78-9ba5-a330455a7f5a.mp4',
       quote: "On fait plus 60% de chiffre d'affaires grâce aux réseaux sociaux, la première action de communication j'ai vu un retour direct"
     },
@@ -70,8 +70,8 @@
       id: 8,
       name: 'Vincent',
       role: 'Gérant du restaurant EASY SUSHI',
-      logo: '/images/iveri.png',
-      thumbnail: 'https://image-flow.fr/uploads/l-expe-rience-fa4f8820-cb62-425f-800c-243dfcecda3f.webp',
+      logo: 'https://image-flow.fr/uploads/easy-sushi-logo-c9b031ae-33d3-4473-8e55-71290add8f18.webp',
+      thumbnail: 'https://image-flow.fr/uploads/capture-d-e-cran-2025-11-13-a-13-29-14-570ef43b-8157-4f05-845a-a6e96c4f1bb3.webp',
       videoUrl: 'https://image-flow.fr/uploads/easy-sushis-testimonial-b1b75d05-9a0e-4eaa-baa1-180c1ac9ed58.mp4',
       quote: "Vous avez vraiment apportez une plus value, vous controlez vos influenceurs, votre app marche bien c'est top"
     },
@@ -79,8 +79,8 @@
       id: 9,
       name: 'Bertrand',
       role: 'Gérant de la salle de réalité virtuelle EVA',
-      logo: '/images/284x140-2.png',
-      thumbnail: 'https://image-flow.fr/uploads/l-expe-rience-fa4f8820-cb62-425f-800c-243dfcecda3f.webp',
+      logo: 'https://image-flow.fr/uploads/eva-logo-1f8509f2-13a3-4d06-a5db-fb360181efcb.webp',
+      thumbnail: 'https://image-flow.fr/uploads/capture-d-e-cran-2025-11-13-a-13-29-45-a965f7b1-d6c0-4f8b-8454-d49ba566291f.webp',
       videoUrl: 'https://image-flow.fr/uploads/eva-tesimonial-59334730-75f0-4afc-8c63-526844ef0b37.mp4',
       quote: "Ce qui est génial avec BE HYPE c'est qu'on a pu accueillir des influenceurs et des créateurs de contenu qui ont une communauté diverse"
     },
@@ -88,8 +88,8 @@
       id: 10,
       name: 'Cyrielle',
       role: 'Gérante du centre de chute libre indoor iFLY',
-      logo: '/images/SARBACANE.avif',
-      thumbnail: 'https://image-flow.fr/uploads/l-expe-rience-fa4f8820-cb62-425f-800c-243dfcecda3f.webp',
+      logo: 'https://image-flow.fr/uploads/ifly-logo-1e9cdf35-b3fe-40c7-8793-20f5e7c8b342.webp',
+      thumbnail: 'https://image-flow.fr/uploads/capture-d-e-cran-2025-11-13-a-13-30-20-9e029a00-e9ed-4fd4-a52f-f28993981ddd.webp',
       videoUrl: 'https://image-flow.fr/uploads/ifly-tesimonial-b8802ec8-4966-486a-8b4f-f56a054873c7.mp4',
       quote: "Avec BE HYPE on a plus de 60 Influenceurs qui sont venus tester l'activité et le truc c'est que ça humanise"
     },
@@ -98,7 +98,7 @@
       name: 'Fanny',
       role: 'Gérante du restaurant MAISON MONT GRAND',
       logo: '/images/284x140-3.avif',
-      thumbnail: 'https://image-flow.fr/uploads/l-expe-rience-fa4f8820-cb62-425f-800c-243dfcecda3f.webp',
+      thumbnail: 'https://image-flow.fr/uploads/capture-d-e-cran-2025-11-13-a-13-30-45-cbfa59f2-d53b-4f98-be72-00ea52d3420d.webp',
       videoUrl: 'https://image-flow.fr/uploads/maison-mont-grand-tesimonial-ef545765-99e3-48a0-8010-d070ec9d6bf7.mp4',
       quote: "BEHYPE nous a aidé à construire une vraie présence sur les réseaux sociaux"
     }
