@@ -50,6 +50,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
+        {/* Preconnect pour ressources critiques */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://player.vimeo.com" />
+        <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" />
+        <link rel="dns-prefetch" href="https://static.hotjar.com" />
+
+        {/* Preload logo pour FCP rapide */}
+        <link rel="preload" href="/images/LOGO-BEHYPE-WHITE_1.webp" as="image" />
+
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
