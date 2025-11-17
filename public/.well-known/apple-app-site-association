@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "J2LSH5CA6J.com.behype.ios"
+        ],
+        "paths": [
+          "/redirect"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "J2LSH5CA6J.com.behype.ios"
+    ]
+  }
+}

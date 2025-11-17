@@ -112,10 +112,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
 
-        <!-- Se connecter Button with Tooltip -->
+        <!-- Recevoir des influenceurs Button -->
         <div style="position: relative; display: inline-block;">
-          <a href="#" onclick="showTooltip('login'); return false;" class="navbar_button-alternate is-small w-inline-block" style="cursor: not-allowed; opacity: 0.9;">
-            <div data-i18n="nav.login">Se connecter</div>
+          <a href="#" onclick="openCalendlyModal(); return false;" class="navbar_button-alternate is-small w-inline-block">
+            <div data-i18n="nav.receiveInfluencers">Recevoir des influenceurs</div>
           </a>
           <div id="tooltip-login" class="coming-soon-tooltip" style="display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; white-space: nowrap; z-index: 10000; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
             Bientôt disponible
@@ -550,27 +550,41 @@ menu.addEventListener('touchend', (e) => {
                     <div class="screen_top-right-container"><img src="images/close.svg" loading="lazy" alt="" class="cross"></div>
                   </div>
                 </div>
-                <div id="w-node-_053e0342-912c-2614-fd84-d750d47927db-d47927ad" class="screen_hero-wrapper side"><img src="images/4_1.avif" loading="lazy" sizes="288px" srcset="images/4_14.avif 500w, images/4_1.avif 1587w" alt="" class="image-8">
-                  <div id="video-toggle" class="video_wrapper w-embed w-iframe"><iframe class="video-toggle" data-src="https://player.vimeo.com/video/1073079525?h=1410d8a752&autoplay=1&muted=1&loop=1&background=1&dnt=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scale(1.25);
-    transform-origin: center;
-    object-fit: cover;
-    border: none;
-    pointer-events: none;">
-                    </iframe></div>
+                <div id="w-node-_053e0342-912c-2614-fd84-d750d47927db-d47927ad" class="screen_hero-wrapper side"><img src="https://image-flow.fr/uploads/img-2757-ac93b8ef-21d5-45e9-be3b-e0befe038800.webp" loading="lazy" alt="" class="image-8">
+                  <div id="video-toggle" class="video_wrapper w-embed w-iframe" onmouseenter="this.querySelector('video').pause(); this.querySelector('img.video-poster').style.display='block';" onmouseleave="this.querySelector('video').play(); this.querySelector('img.video-poster').style.display='none';">
+                    <video autoplay muted loop playsinline style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      transform: scale(1.25);
+                      transform-origin: center;
+                      object-fit: cover;
+                      border: none;
+                      pointer-events: none;">
+                      <source src="https://image-flow.fr/uploads/downloadgram-org-aqo0u7pcij4np0ymi-szberl-rtryefyp-dfbe33ab-1f38-4ae7-88b5-c27e4eb27974.mp4" type="video/mp4">
+                    </video>
+                    <img src="https://image-flow.fr/uploads/img-2757-ac93b8ef-21d5-45e9-be3b-e0befe038800.webp" class="video-poster" style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      transform: scale(1.25);
+                      transform-origin: center;
+                      object-fit: cover;
+                      display: none;
+                      pointer-events: none;">
+                  </div>
                   <div class="top_screen-absolute right">
                     <div class="screen_top-left-container">
-                      <div class="screen_pdp-container"><img src="images/LOCALFOOD.webp" loading="lazy" alt="" class="pdp">
+                      <div class="screen_pdp-container"><img src="https://image-flow.fr/uploads/leparisdalexis-5ae514dd-183e-4d86-9830-10069e13591e.webp" loading="lazy" alt="" class="pdp">
                         <div class="available_dot"></div>
                       </div>
                       <div class="screen_influencer-infos">
-                        <div class="influencer_name">localfoodmarseille</div>
-                        <div class="influencer_followers">115k abonnés</div>
+                        <div class="influencer_name">leparisdalexis</div>
+                        <div class="influencer_followers">741k abonnés</div>
                       </div>
                     </div>
                     <div class="screen_top-right-container"><img src="images/close.svg" loading="lazy" alt="" class="cross"></div>
@@ -820,6 +834,28 @@ menu.addEventListener('touchend', (e) => {
         <div class="circle_bg-lightblue"></div>
       </div>
     </section>
+
+    <!-- CTA Button after Comment ça marche -->
+    <div style="background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%); padding: 60px 0; text-align: center;">
+      <button onclick="openCalendlyModal()" style="
+        background: linear-gradient(135deg, #2465f7 0%, #1d50d6 100%);
+        color: white;
+        padding: 20px 48px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 12px 36px rgba(36, 101, 247, 0.5);
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+      "
+      onmouseover="this.style.transform='translateY(-6px) scale(1.05)'; this.style.boxShadow='0 16px 48px rgba(36, 101, 247, 0.7)';"
+      onmouseout="this.style.transform=''; this.style.boxShadow='0 12px 36px rgba(36, 101, 247, 0.5)';">
+        🚀 Boostez votre visibilité
+      </button>
+    </div>
+
     <div id="testimonials" class="testimonial_section">
       <div class="behype_default-container w-container">
         <div class="features_undertitle" data-translate="testimonials.undertitle">témoignages</div>
@@ -1119,39 +1155,81 @@ document.addEventListener("DOMContentLoaded", function() {
       bottom: 32px !important;
       right: 32px !important;
       z-index: 99999 !important;
-      background: linear-gradient(135deg, #2465f7 0%, #1d50d6 100%);
-      color: white;
-      padding: 16px 28px;
+      background: white;
+      color: #2465f7;
+      padding: 18px 32px;
       border-radius: 50px;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 17px;
+      font-weight: 700;
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 10px;
-      box-shadow: 0 8px 24px rgba(36, 101, 247, 0.4);
-      transition: all 0.3s ease;
-      animation: pulse 2s infinite;
+      gap: 12px;
+      box-shadow: 0 10px 30px rgba(36, 101, 247, 0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
+      letter-spacing: 0.3px;
+      position: relative;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+    }
+
+    .floating-demo-button::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50px;
+      padding: 3px;
+      background: conic-gradient(
+        from var(--angle),
+        #2465f7 0deg,
+        #1d50d6 90deg,
+        transparent 180deg,
+        transparent 360deg
+      );
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      animation: rotate 2s linear infinite;
     }
 
     .floating-demo-button:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(36, 101, 247, 0.5);
-      animation: none;
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 16px 40px rgba(36, 101, 247, 0.5);
     }
 
     .floating-demo-button svg {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
+      stroke: #2465f7;
     }
 
-    @keyframes pulse {
-      0%, 100% {
-        box-shadow: 0 8px 24px rgba(36, 101, 247, 0.4);
+    .floating-demo-button:hover svg {
+      transform: translateX(4px);
+    }
+
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
       }
-      50% {
-        box-shadow: 0 8px 32px rgba(36, 101, 247, 0.7), 0 0 0 8px rgba(36, 101, 247, 0.1);
+    }
+
+    @supports not (background: conic-gradient(from 0deg, red, blue)) {
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
     }
   }

@@ -1,0 +1,18 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.behype.android",
+      "sha256_cert_fingerprints": [
+        "9A:B7:24:1C:EE:C0:0E:16:F7:31:9C:8C:68:21:58:FD:B1:97:A1:7B:0B:D0:DB:39:B0:56:43:D8:5A:24:0A:82",
+        "a8:2c:3e:0e:b6:c8:c2:d5:7f:0d:ef:e9:ee:e5:67:30:bc:37:26:f3:cb:7f:15:bd:58:96:f4:38:8e:60:ca:ad",
+        "98:8a:86:67:81:02:55:25:ec:3f:62:66:7f:d5:cf:53:05:18:9d:fa:8b:fa:50:5a:ba:ea:1b:2e:1f:95:1e:78",
+        "25:40:60:dd:86:8c:57:99:19:c6:8f:9c:23:5e:0a:be:ef:02:2d:6f:ee:4f:0b:38:7a:d7:3b:fc:f0:30:5d:e0"
+      ]
+    }
+  }
+]

@@ -1642,39 +1642,80 @@ window.addEventListener("DOMContentLoaded", function () {
       bottom: 32px !important;
       right: 32px !important;
       z-index: 99999 !important;
-      background: linear-gradient(135deg, #2465f7 0%, #1d50d6 100%);
-      color: white;
-      padding: 16px 28px;
+      background: white;
+      color: #2465f7;
+      padding: 18px 32px;
       border-radius: 50px;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 17px;
+      font-weight: 700;
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 10px;
-      box-shadow: 0 8px 24px rgba(36, 101, 247, 0.4);
-      transition: all 0.3s ease;
-      animation: pulse 2s infinite;
+      box-shadow: 0 10px 30px rgba(36, 101, 247, 0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
+      position: relative;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+    }
+
+    .floating-demo-button::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50px;
+      padding: 3px;
+      background: conic-gradient(
+        from var(--angle),
+        #2465f7 0deg,
+        #1d50d6 90deg,
+        transparent 180deg,
+        transparent 360deg
+      );
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      animation: rotate 2s linear infinite;
     }
 
     .floating-demo-button:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(36, 101, 247, 0.5);
-      animation: none;
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 16px 40px rgba(36, 101, 247, 0.5);
     }
 
     .floating-demo-button svg {
       width: 20px;
       height: 20px;
+      stroke: #2465f7;
     }
 
-    @keyframes pulse {
-      0%, 100% {
-        box-shadow: 0 8px 24px rgba(36, 101, 247, 0.4);
+    .floating-demo-button:hover svg {
+      transform: translateX(4px);
+    }
+
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
       }
-      50% {
-        box-shadow: 0 8px 32px rgba(36, 101, 247, 0.7), 0 0 0 8px rgba(36, 101, 247, 0.1);
+    }
+
+    @supports not (background: conic-gradient(from 0deg, red, blue)) {
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
     }
   }
