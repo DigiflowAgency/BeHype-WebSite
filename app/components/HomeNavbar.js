@@ -514,37 +514,91 @@ export default function HomeNavbar() {
             z-index: 9999;
             background: linear-gradient(135deg, #2465f7 0%, #1d50d6 100%);
             color: white;
-            padding: 16px 28px;
+            padding: 18px 32px;
             border-radius: 50px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 17px;
+            font-weight: 700;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 10px;
-            box-shadow: 0 8px 24px rgba(36, 101, 247, 0.4);
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
+            gap: 12px;
+            box-shadow: 0 10px 30px rgba(36, 101, 247, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulseAndBounce 3s ease-in-out infinite;
             cursor: pointer;
+            border: none;
+            letter-spacing: 0.3px;
+          }
+
+          .floating-demo-button::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #2465f7 0%, #1d50d6 100%);
+            opacity: 0.3;
+            z-index: -1;
+            animation: pulseRing 3s ease-in-out infinite;
           }
 
           .floating-demo-button:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 32px rgba(36, 101, 247, 0.5);
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: 0 16px 40px rgba(36, 101, 247, 0.6);
             animation: none;
           }
 
-          .floating-demo-button svg {
-            width: 20px;
-            height: 20px;
+          .floating-demo-button:hover::before {
+            animation: none;
+            opacity: 0.5;
           }
 
-          @keyframes pulse {
+          .floating-demo-button svg {
+            width: 22px;
+            height: 22px;
+            animation: arrowSlide 1.5s ease-in-out infinite;
+          }
+
+          .floating-demo-button:hover svg {
+            animation: none;
+            transform: translateX(4px);
+          }
+
+          @keyframes pulseAndBounce {
             0%, 100% {
-              box-shadow: 0 8px 24px rgba(36, 101, 247, 0.4);
+              transform: translateY(0) scale(1);
+              box-shadow: 0 10px 30px rgba(36, 101, 247, 0.5);
+            }
+            25% {
+              transform: translateY(-8px) scale(1.02);
+              box-shadow: 0 14px 35px rgba(36, 101, 247, 0.6);
             }
             50% {
-              box-shadow: 0 8px 32px rgba(36, 101, 247, 0.7), 0 0 0 8px rgba(36, 101, 247, 0.1);
+              transform: translateY(0) scale(1);
+              box-shadow: 0 12px 32px rgba(36, 101, 247, 0.55);
+            }
+            75% {
+              transform: translateY(-4px) scale(1.01);
+              box-shadow: 0 13px 34px rgba(36, 101, 247, 0.58);
+            }
+          }
+
+          @keyframes pulseRing {
+            0%, 100% {
+              transform: scale(1);
+              opacity: 0.3;
+            }
+            50% {
+              transform: scale(1.15);
+              opacity: 0;
+            }
+          }
+
+          @keyframes arrowSlide {
+            0%, 100% {
+              transform: translateX(0);
+            }
+            50% {
+              transform: translateX(4px);
             }
           }
         }
