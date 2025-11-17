@@ -112,10 +112,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
 
-        <!-- Recevoir des influenceurs Button -->
+        <!-- Se connecter Button with Tooltip -->
         <div style="position: relative; display: inline-block;">
-          <a href="#" onclick="openCalendlyModal(); return false;" class="navbar_button-alternate is-small w-inline-block">
-            <div data-i18n="nav.receiveInfluencers">Recevoir des influenceurs</div>
+          <a href="#" onclick="showTooltip('login'); return false;" class="navbar_button-alternate is-small w-inline-block" style="cursor: not-allowed; opacity: 0.9;">
+            <div data-i18n="nav.login">Se connecter</div>
           </a>
           <div id="tooltip-login" class="coming-soon-tooltip" style="display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; white-space: nowrap; z-index: 10000; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
             Bientôt disponible
@@ -464,8 +464,8 @@ menu.addEventListener('touchend', (e) => {
                   <div class="space_medium is-main"></div>
                   <div class="uui-button-row button-row-center is-reverse-mobile-landscape">
                     <div class="uui-button-wrapper max-width-full-mobile-landscape">
-                      <a href="/calendly" target="_parent" class="navbar_button-alternate is-normal w-inline-block">
-                        <div class="text-block-2" data-i18n="nav.login">Se connecter</div>
+                      <a href="#" onclick="openCalendlyModal(); return false;" class="navbar_button-alternate is-normal w-inline-block">
+                        <div class="text-block-2" data-i18n="nav.receiveInfluencers">Recevoir des influenceurs</div>
                       </a>
                     </div>
                   </div>
