@@ -63,6 +63,28 @@ export default function InfluenceTest() {
 
       {/* Hero Section */}
       <section className="hero">
+        {/* Animated Grid Background */}
+        <div className="hero-grid">
+          {Array.from({ length: 50 }).map((_, i) => (
+            <div
+              key={i}
+              className="grid-dot"
+              style={{
+                left: `${(i % 10) * 10 + 5}%`,
+                top: `${Math.floor(i / 10) * 20 + 10}%`,
+                animationDelay: `${Math.random() * 3}s`
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Floating shapes */}
+        <div className="hero-shapes">
+          <div className="shape shape-1"></div>
+          <div className="shape shape-2"></div>
+          <div className="shape shape-3"></div>
+        </div>
+
         <div className="hero-blur hero-blur-1"></div>
         <div className="hero-blur hero-blur-2"></div>
         <div className="hero-gradient"></div>
@@ -341,6 +363,100 @@ export default function InfluenceTest() {
           inset: 0;
           background: radial-gradient(ellipse at center, transparent 0%, rgba(15, 23, 42, 0.8) 70%);
           pointer-events: none;
+        }
+
+        .hero-grid {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          pointer-events: none;
+          opacity: 0.4;
+        }
+
+        .grid-dot {
+          position: absolute;
+          width: 3px;
+          height: 3px;
+          background: #2960f6;
+          border-radius: 50%;
+          box-shadow: 0 0 10px rgba(41, 96, 246, 0.5);
+          animation: dotPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes dotPulse {
+          0%, 100% {
+            opacity: 0.2;
+            transform: scale(0.8);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.5);
+          }
+        }
+
+        .hero-shapes {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          pointer-events: none;
+        }
+
+        .shape {
+          position: absolute;
+          border: 2px solid rgba(41, 96, 246, 0.1);
+          border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+          animation: shapeFloat 25s ease-in-out infinite;
+        }
+
+        .shape-1 {
+          width: 400px;
+          height: 400px;
+          top: 10%;
+          right: 10%;
+          animation-delay: 0s;
+        }
+
+        .shape-2 {
+          width: 300px;
+          height: 300px;
+          bottom: 15%;
+          left: 5%;
+          animation-delay: 5s;
+          border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+        }
+
+        .shape-3 {
+          width: 250px;
+          height: 250px;
+          top: 50%;
+          left: 50%;
+          margin-left: -125px;
+          margin-top: -125px;
+          animation-delay: 10s;
+          border-radius: 50%;
+        }
+
+        @keyframes shapeFloat {
+          0%, 100% {
+            transform: translate(0, 0) rotate(0deg) scale(1);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            opacity: 0.3;
+          }
+          25% {
+            transform: translate(20px, -30px) rotate(90deg) scale(1.1);
+            border-radius: 70% 30% 50% 50% / 30% 70% 30% 70%;
+            opacity: 0.5;
+          }
+          50% {
+            transform: translate(-20px, -50px) rotate(180deg) scale(0.9);
+            border-radius: 50% 50% 30% 70% / 70% 30% 70% 30%;
+            opacity: 0.4;
+          }
+          75% {
+            transform: translate(-30px, -20px) rotate(270deg) scale(1.05);
+            border-radius: 30% 70% 70% 30% / 70% 30% 30% 70%;
+            opacity: 0.6;
+          }
         }
 
         .hero-container {
@@ -1107,6 +1223,19 @@ export default function InfluenceTest() {
           .hero-blur-2 {
             width: 300px;
             height: 300px;
+          }
+
+          .hero-grid {
+            opacity: 0.2;
+          }
+
+          .grid-dot {
+            width: 2px;
+            height: 2px;
+          }
+
+          .shape {
+            display: none;
           }
 
           /* Sections Mobile */
