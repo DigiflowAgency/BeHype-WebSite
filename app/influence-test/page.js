@@ -63,43 +63,56 @@ export default function InfluenceTest() {
 
       {/* Hero Section */}
       <section className="hero">
-        {/* Animated Background Elements */}
+        {/* Animated Background Elements - Static Animation */}
         <div className="hero-animated-bg">
-          {/* Floating Orbs - BEAUCOUP PLUS VISIBLES */}
-          {Array.from({ length: 20 }).map((_, i) => (
-            <div
-              key={`orb-${i}`}
-              className="floating-orb"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${12 + Math.random() * 8}s`
-              }}
-            />
-          ))}
+          {/* Floating Orbs - positions fixes */}
+          {Array.from({ length: 20 }).map((_, i) => {
+            // Positions déterministes basées sur l'index
+            const positions = [
+              { left: 10, top: 20 }, { left: 85, top: 15 }, { left: 25, top: 70 },
+              { left: 70, top: 80 }, { left: 50, top: 30 }, { left: 90, top: 60 },
+              { left: 15, top: 85 }, { left: 60, top: 10 }, { left: 35, top: 55 },
+              { left: 80, top: 40 }, { left: 5, top: 50 }, { left: 95, top: 25 },
+              { left: 45, top: 90 }, { left: 65, top: 5 }, { left: 20, top: 45 },
+              { left: 75, top: 65 }, { left: 40, top: 75 }, { left: 55, top: 35 },
+              { left: 30, top: 95 }, { left: 85, top: 50 }
+            ]
+            const pos = positions[i] || { left: (i * 13) % 100, top: (i * 17) % 100 }
+            return (
+              <div
+                key={`orb-${i}`}
+                className="floating-orb"
+                style={{
+                  left: `${pos.left}%`,
+                  top: `${pos.top}%`,
+                  animationDelay: `${(i * 0.3)}s`,
+                  animationDuration: `${15 + (i % 5)}s`
+                }}
+              />
+            )
+          })}
 
-          {/* Particles qui traversent l'écran */}
-          {Array.from({ length: 25 }).map((_, i) => (
+          {/* Particles - positions fixes */}
+          {Array.from({ length: 20 }).map((_, i) => (
             <div
               key={`particle-${i}`}
               className="hero-particle"
               style={{
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 8}s`,
-                animationDuration: `${6 + Math.random() * 4}s`
+                left: `${(i * 5 + 2)}%`,
+                animationDelay: `${(i * 0.4)}s`,
+                animationDuration: `${7 + (i % 3)}s`
               }}
             />
           ))}
 
-          {/* Lignes diagonales animées */}
-          {Array.from({ length: 6 }).map((_, i) => (
+          {/* Lignes diagonales */}
+          {Array.from({ length: 5 }).map((_, i) => (
             <div
               key={`diagonal-${i}`}
               className="diagonal-line"
               style={{
-                left: `${i * 20}%`,
-                animationDelay: `${i * 1}s`,
+                left: `${i * 22}%`,
+                animationDelay: `${i * 1.2}s`,
               }}
             />
           ))}
