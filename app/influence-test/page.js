@@ -904,6 +904,11 @@ export default function InfluenceTest() {
           background: #ffffff;
         }
 
+        .testimonials-section .section-title {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
         .testimonials-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1064,6 +1069,11 @@ export default function InfluenceTest() {
         .faq-section {
           padding: 140px 5%;
           background: #fafafa;
+        }
+
+        .faq-section .section-title {
+          text-align: center;
+          margin-bottom: 80px;
         }
 
         .faq-list {
@@ -1384,19 +1394,26 @@ export default function InfluenceTest() {
             line-height: 1.6;
           }
 
-          /* CTA Mobile */
-          .cta-section {
+          /* CTA Mid Mobile */
+          .cta-mid-section {
             padding: 60px 5%;
           }
 
           .cta-title {
-            font-size: 28px;
+            font-size: 26px;
+            line-height: 1.3;
             margin-bottom: 16px;
           }
 
           .cta-subtitle {
             font-size: 16px;
             margin-bottom: 32px;
+          }
+
+          .btn-white {
+            width: 100%;
+            font-size: 15px;
+            padding: 16px 28px;
           }
 
           /* FAQ Mobile */
@@ -1426,8 +1443,8 @@ export default function InfluenceTest() {
           }
 
           /* Final CTA Mobile */
-          .final-cta-section {
-            padding: 60px 5%;
+          .final-cta {
+            padding: 80px 5%;
           }
 
           .final-cta-title {
