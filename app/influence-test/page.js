@@ -695,6 +695,7 @@ export default function InfluenceTest() {
         .exclusivity-section .section-title {
           color: #ffffff;
           margin-bottom: 60px;
+          text-align: center;
         }
 
         .exclusivity-content {
@@ -1061,39 +1062,258 @@ export default function InfluenceTest() {
 
         /* Responsive */
         @media (max-width: 768px) {
+          /* Hero Section Mobile */
+          .hero {
+            padding: 100px 5% 80px 5%;
+            min-height: auto;
+          }
+
           .hero-title {
-            font-size: 40px;
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 20px;
           }
 
           .hero-subtitle {
-            font-size: 28px;
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+
+          .hero-description {
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+
+          .hero-tagline {
+            font-size: 15px;
+            margin-bottom: 32px;
+          }
+
+          .hero-badge {
+            font-size: 13px;
+            padding: 10px 20px;
+          }
+
+          .btn-primary {
+            font-size: 15px;
+            padding: 16px 28px;
+          }
+
+          .scroll-indicator {
+            display: none;
+          }
+
+          .hero-blur-1,
+          .hero-blur-2 {
+            width: 300px;
+            height: 300px;
+          }
+
+          /* Sections Mobile */
+          .why-section,
+          .exclusivity-section,
+          .testimonials-section {
+            padding: 60px 5%;
           }
 
           .section-title {
-            font-size: 36px;
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 20px;
           }
 
-          .features-grid,
-          .testimonials-grid {
+          .section-intro {
+            font-size: 16px;
+            margin-bottom: 40px;
+          }
+
+          /* Features Grid Mobile */
+          .features-grid {
             grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .feature-card {
+            padding: 32px 24px;
+          }
+
+          .feature-card h3 {
+            font-size: 18px;
+          }
+
+          .feature-number {
+            font-size: 80px;
+            opacity: 0.06;
+          }
+
+          .feature-icon {
+            font-size: 36px;
+            margin-bottom: 16px;
+          }
+
+          /* Final Point Mobile */
+          .final-point {
+            margin-top: 40px;
+            padding: 28px 24px;
+          }
+
+          .final-point p {
+            font-size: 16px;
+          }
+
+          .sparkle {
+            font-size: 20px;
+          }
+
+          /* Exclusivity Mobile */
+          .exclusivity-text {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 40px;
           }
 
           .mission-box {
             flex-direction: column;
             text-align: center;
+            padding: 32px 24px;
+            gap: 20px;
+          }
+
+          .mission-icon {
+            font-size: 40px;
+          }
+
+          .mission-label {
+            font-size: 13px;
+          }
+
+          .mission-text {
+            font-size: 17px;
+          }
+
+          /* Testimonials Mobile */
+          .testimonials-grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+          }
+
+          .video-placeholder {
+            height: 240px;
+          }
+
+          .testimonial-content {
+            padding: 24px 20px;
+          }
+
+          .testimonial-name {
+            font-size: 17px;
+          }
+
+          .testimonial-handle {
+            font-size: 14px;
+          }
+
+          .testimonial-quote {
+            font-size: 15px;
+            line-height: 1.6;
+          }
+
+          /* CTA Mobile */
+          .cta-section {
+            padding: 60px 5%;
+          }
+
+          .cta-title {
+            font-size: 28px;
+            margin-bottom: 16px;
+          }
+
+          .cta-subtitle {
+            font-size: 16px;
+            margin-bottom: 32px;
+          }
+
+          /* FAQ Mobile */
+          .faq-section {
+            padding: 60px 5%;
+          }
+
+          .faq-item {
+            padding: 24px 20px;
+          }
+
+          .faq-question {
+            font-size: 16px;
+            padding-right: 32px;
+          }
+
+          .faq-toggle {
+            font-size: 20px;
+            width: 28px;
+            height: 28px;
+          }
+
+          .faq-answer {
+            font-size: 15px;
+            line-height: 1.6;
+            padding-top: 16px;
+          }
+
+          /* Final CTA Mobile */
+          .final-cta-section {
+            padding: 60px 5%;
           }
 
           .final-cta-title {
-            font-size: 40px;
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+          }
+
+          .final-cta-subtitle {
+            font-size: 16px;
+            margin-bottom: 40px;
           }
 
           .final-cta-buttons {
             flex-direction: column;
+            gap: 16px;
           }
 
           .btn-primary.large,
           .btn-outline.large {
             width: 100%;
+            font-size: 16px;
+            padding: 18px 32px;
+          }
+        }
+
+        /* Extra Small Mobile */
+        @media (max-width: 480px) {
+          .hero-title {
+            font-size: 30px;
+          }
+
+          .hero-subtitle {
+            font-size: 20px;
+          }
+
+          .section-title {
+            font-size: 28px;
+          }
+
+          .final-cta-title {
+            font-size: 30px;
+          }
+
+          .feature-card h3 {
+            font-size: 16px;
+          }
+
+          .btn-primary,
+          .btn-outline {
+            padding: 14px 24px;
+            font-size: 14px;
           }
         }
       `}</style>
