@@ -63,26 +63,46 @@ export default function InfluenceTest() {
 
       {/* Hero Section */}
       <section className="hero">
-        {/* Animated Grid Background */}
-        <div className="hero-grid">
-          {Array.from({ length: 50 }).map((_, i) => (
+        {/* Animated Background Elements */}
+        <div className="hero-animated-bg">
+          {/* Floating Orbs - BEAUCOUP PLUS VISIBLES */}
+          {Array.from({ length: 20 }).map((_, i) => (
             <div
-              key={i}
-              className="grid-dot"
+              key={`orb-${i}`}
+              className="floating-orb"
               style={{
-                left: `${(i % 10) * 10 + 5}%`,
-                top: `${Math.floor(i / 10) * 20 + 10}%`,
-                animationDelay: `${Math.random() * 3}s`
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${12 + Math.random() * 8}s`
               }}
             />
           ))}
-        </div>
 
-        {/* Floating shapes */}
-        <div className="hero-shapes">
-          <div className="shape shape-1"></div>
-          <div className="shape shape-2"></div>
-          <div className="shape shape-3"></div>
+          {/* Particles qui traversent l'écran */}
+          {Array.from({ length: 25 }).map((_, i) => (
+            <div
+              key={`particle-${i}`}
+              className="hero-particle"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${6 + Math.random() * 4}s`
+              }}
+            />
+          ))}
+
+          {/* Lignes diagonales animées */}
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div
+              key={`diagonal-${i}`}
+              className="diagonal-line"
+              style={{
+                left: `${i * 20}%`,
+                animationDelay: `${i * 1}s`,
+              }}
+            />
+          ))}
         </div>
 
         <div className="hero-blur hero-blur-1"></div>
@@ -365,97 +385,98 @@ export default function InfluenceTest() {
           pointer-events: none;
         }
 
-        .hero-grid {
+        .hero-animated-bg {
           position: absolute;
           inset: 0;
           overflow: hidden;
           pointer-events: none;
-          opacity: 0.4;
+          z-index: 1;
         }
 
-        .grid-dot {
+        .floating-orb {
           position: absolute;
-          width: 3px;
-          height: 3px;
-          background: #2960f6;
+          width: 200px;
+          height: 200px;
+          background: radial-gradient(circle, rgba(41, 96, 246, 0.6) 0%, rgba(41, 96, 246, 0.2) 50%, transparent 70%);
           border-radius: 50%;
-          box-shadow: 0 0 10px rgba(41, 96, 246, 0.5);
-          animation: dotPulse 3s ease-in-out infinite;
+          filter: blur(50px);
+          animation: orbFloat 15s ease-in-out infinite;
         }
 
-        @keyframes dotPulse {
+        @keyframes orbFloat {
           0%, 100% {
-            opacity: 0.2;
-            transform: scale(0.8);
-          }
-          50% {
-            opacity: 1;
-            transform: scale(1.5);
-          }
-        }
-
-        .hero-shapes {
-          position: absolute;
-          inset: 0;
-          overflow: hidden;
-          pointer-events: none;
-        }
-
-        .shape {
-          position: absolute;
-          border: 2px solid rgba(41, 96, 246, 0.1);
-          border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-          animation: shapeFloat 25s ease-in-out infinite;
-        }
-
-        .shape-1 {
-          width: 400px;
-          height: 400px;
-          top: 10%;
-          right: 10%;
-          animation-delay: 0s;
-        }
-
-        .shape-2 {
-          width: 300px;
-          height: 300px;
-          bottom: 15%;
-          left: 5%;
-          animation-delay: 5s;
-          border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-        }
-
-        .shape-3 {
-          width: 250px;
-          height: 250px;
-          top: 50%;
-          left: 50%;
-          margin-left: -125px;
-          margin-top: -125px;
-          animation-delay: 10s;
-          border-radius: 50%;
-        }
-
-        @keyframes shapeFloat {
-          0%, 100% {
-            transform: translate(0, 0) rotate(0deg) scale(1);
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            opacity: 0.3;
+            transform: translate(0, 0) scale(1);
+            opacity: 0.7;
           }
           25% {
-            transform: translate(20px, -30px) rotate(90deg) scale(1.1);
-            border-radius: 70% 30% 50% 50% / 30% 70% 30% 70%;
-            opacity: 0.5;
+            transform: translate(150px, -100px) scale(1.4);
+            opacity: 0.9;
           }
           50% {
-            transform: translate(-20px, -50px) rotate(180deg) scale(0.9);
-            border-radius: 50% 50% 30% 70% / 70% 30% 70% 30%;
-            opacity: 0.4;
+            transform: translate(-80px, -150px) scale(0.9);
+            opacity: 0.6;
           }
           75% {
-            transform: translate(-30px, -20px) rotate(270deg) scale(1.05);
-            border-radius: 30% 70% 70% 30% / 70% 30% 30% 70%;
-            opacity: 0.6;
+            transform: translate(-120px, -80px) scale(1.2);
+            opacity: 0.8;
+          }
+        }
+
+        .hero-particle {
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          background: #2960f6;
+          border-radius: 50%;
+          box-shadow: 0 0 20px rgba(41, 96, 246, 0.8), 0 0 40px rgba(41, 96, 246, 0.4);
+          animation: particleFall 8s linear infinite;
+        }
+
+        @keyframes particleFall {
+          0% {
+            transform: translateY(-20px);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(100vh);
+            opacity: 0;
+          }
+        }
+
+        .diagonal-line {
+          position: absolute;
+          top: -100%;
+          width: 1px;
+          height: 200%;
+          background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(41, 96, 246, 0.6) 50%,
+            transparent 100%
+          );
+          transform: rotate(25deg);
+          animation: diagonalMove 8s linear infinite;
+        }
+
+        @keyframes diagonalMove {
+          0% {
+            transform: translateY(0) rotate(25deg);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.8;
+          }
+          90% {
+            opacity: 0.8;
+          }
+          100% {
+            transform: translateY(100vh) rotate(25deg);
+            opacity: 0;
           }
         }
 
@@ -1225,17 +1246,20 @@ export default function InfluenceTest() {
             height: 300px;
           }
 
-          .hero-grid {
-            opacity: 0.2;
+          .floating-orb {
+            width: 120px;
+            height: 120px;
+            filter: blur(40px);
           }
 
-          .grid-dot {
-            width: 2px;
-            height: 2px;
+          .hero-particle {
+            width: 3px;
+            height: 3px;
+            box-shadow: 0 0 10px rgba(41, 96, 246, 0.6);
           }
 
-          .shape {
-            display: none;
+          .diagonal-line {
+            opacity: 0.4;
           }
 
           /* Sections Mobile */
