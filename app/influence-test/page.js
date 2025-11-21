@@ -6,9 +6,14 @@ import Footer from '../components/Footer'
 
 export default function InfluenceTest() {
   const [openFaq, setOpenFaq] = useState(null)
+  const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
     document.title = "Le futur de l'influence se construit aujourd'hui - BEHYPE"
+
+    const handleScroll = () => setScrollY(window.scrollY)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const faqs = [
@@ -58,66 +63,90 @@ export default function InfluenceTest() {
 
       {/* Hero Section */}
       <section className="hero">
+        <div className="hero-blur hero-blur-1"></div>
+        <div className="hero-blur hero-blur-2"></div>
+        <div className="hero-gradient"></div>
+
         <div className="hero-container">
-          <div className="hero-content">
-            <h1 className="hero-title">
-              Le futur de l'influence & de la creator economy <span className="highlight">se construit aujourd'hui</span>
-            </h1>
-
-            <h2 className="hero-subtitle">
-              Collabore. Choisis. Gagne.
-            </h2>
-
-            <p className="hero-description">
-              BeHype — La 1ère marketplace française qui connecte les créateurs avec les lieux d'expériences (restaurants, hôtels, activités de loisirs et bien-être).
-            </p>
-
-            <p className="hero-tagline">
-              Collabs gratuites & rémunérées. Pas d'intermédiaire. Pas de stress.
-            </p>
-
-            <div className="hero-cta">
-              <a href="https://onelink.to/qpqfep" className="btn-primary">
-                👉 Créer mon compte gratuitement
-              </a>
-            </div>
-
-            <div className="hero-badge">
-              🚀 Rejoins le mouvement
-            </div>
+          <div className="hero-badge" data-aos="fade-down">
+            <span className="badge-dot"></span>
+            🚀 Rejoins le mouvement
+            <span className="badge-dot"></span>
           </div>
+
+          <h1 className="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Le futur de l'influence & de la creator economy{' '}
+            <span className="gradient-text">se construit aujourd'hui</span>
+          </h1>
+
+          <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Collabore. Choisis. Gagne.
+          </h2>
+
+          <p className="hero-description" data-aos="fade-up" data-aos-delay="300">
+            <strong>BeHype</strong> — La 1ère marketplace française qui connecte les créateurs avec les lieux d'expériences (restaurants, hôtels, activités de loisirs et bien-être).
+          </p>
+
+          <p className="hero-tagline" data-aos="fade-up" data-aos-delay="350">
+            Collabs gratuites & rémunérées. Pas d'intermédiaire. Pas de stress.
+          </p>
+
+          <div className="hero-cta" data-aos="fade-up" data-aos-delay="400">
+            <a href="https://onelink.to/qpqfep" className="btn-primary">
+              <span className="btn-gradient"></span>
+              <span className="btn-text">👉 Créer mon compte gratuitement</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="scroll-indicator" style={{ opacity: scrollY > 100 ? 0 : 1 }}>
+          <div className="scroll-arrow"></div>
         </div>
       </section>
 
-      {/* Why BeHype Section */}
+      {/* Why Section */}
       <section className="why-section">
         <div className="container">
-          <h2 className="section-title">Enfin une plateforme pensée pour toi</h2>
-          <p className="section-intro">
-            Avec BeHype, tu ne dépends plus des DM, de l'aléatoire ou des opportunités qui passent sous le radar.
-          </p>
+          <div className="section-header">
+            <h2 className="section-title">Enfin une plateforme pensée pour toi</h2>
+            <p className="section-intro">
+              Avec BeHype, tu ne dépends plus des DM, de l'aléatoire ou des opportunités qui passent sous le radar.
+            </p>
+          </div>
 
           <div className="features-grid">
-            <div className="feature-card">
+            <div className="feature-card" data-feature="1">
+              <div className="feature-number">01</div>
               <div className="feature-icon">📍</div>
               <h3>Tu choisis les lieux avec lesquels tu veux collaborer</h3>
+              <div className="feature-line"></div>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" data-feature="2">
+              <div className="feature-number">02</div>
               <div className="feature-icon">🤝</div>
               <h3>Tu proposes des collaborations gratuites pour découvrir & créer</h3>
+              <div className="feature-line"></div>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" data-feature="3">
+              <div className="feature-number">03</div>
               <div className="feature-icon">💸</div>
               <h3>Tu acceptes des collaborations rémunérées quand ton contenu le mérite</h3>
+              <div className="feature-line"></div>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" data-feature="4">
+              <div className="feature-number">04</div>
               <div className="feature-icon">🏆</div>
               <h3>Tu développes ton image & ton business comme un vrai pro</h3>
+              <div className="feature-line"></div>
             </div>
           </div>
 
           <div className="final-point">
-            <p>✨ Et surtout : tu gardes le contrôle <strong>du début à la fin.</strong></p>
+            <div className="final-point-inner">
+              <span className="sparkle">✨</span>
+              <p>Et surtout : tu gardes le contrôle <strong>du début à la fin.</strong></p>
+              <span className="sparkle">✨</span>
+            </div>
           </div>
         </div>
       </section>
@@ -132,10 +161,12 @@ export default function InfluenceTest() {
             </p>
             <div className="mission-box">
               <div className="mission-icon">🎯</div>
-              <p className="mission-text">
-                <strong>Notre mission :</strong><br/>
-                Créer un monde où chaque créateur a un vrai pouvoir sur son avenir.
-              </p>
+              <div className="mission-content">
+                <p className="mission-label">Notre mission</p>
+                <p className="mission-text">
+                  Créer un monde où chaque créateur a un vrai pouvoir sur son avenir.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -149,11 +180,19 @@ export default function InfluenceTest() {
             {testimonials.map((testimonial, i) => (
               <div key={i} className="testimonial-card">
                 <div className="video-placeholder">
-                  <div className="play-icon">▶</div>
+                  <div className="video-bg"></div>
+                  <div className="play-button">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M8 5v14l11-7z" fill="currentColor"/>
+                    </svg>
+                  </div>
                   <p className="video-label">Vidéo témoignage</p>
                 </div>
                 <div className="testimonial-content">
-                  <p className="testimonial-name">{testimonial.name} <span className="testimonial-handle">{testimonial.handle}</span></p>
+                  <div className="testimonial-header">
+                    <p className="testimonial-name">{testimonial.name}</p>
+                    <p className="testimonial-handle">{testimonial.handle}</p>
+                  </div>
                   <p className="testimonial-quote">"{testimonial.quote}"</p>
                 </div>
               </div>
@@ -164,34 +203,48 @@ export default function InfluenceTest() {
 
       {/* CTA Mid Section */}
       <section className="cta-mid-section">
+        <div className="cta-blur cta-blur-1"></div>
+        <div className="cta-blur cta-blur-2"></div>
         <div className="container">
-          <h2 className="cta-title">🚀 Tu veux faire partie des 1ers créateurs mis en avant ?</h2>
-          <p className="cta-subtitle">Places limitées pour le lancement officiel.</p>
-          <a href="https://onelink.to/qpqfep" className="btn-primary">
-            👉 Créer mon profil maintenant
-          </a>
+          <div className="cta-content">
+            <h2 className="cta-title">🚀 Tu veux faire partie des 1ers créateurs mis en avant ?</h2>
+            <p className="cta-subtitle">Places limitées pour le lancement officiel.</p>
+            <a href="https://onelink.to/qpqfep" className="btn-white">
+              <span className="btn-text">👉 Créer mon profil maintenant</span>
+            </a>
+          </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="faq-section">
         <div className="container">
-          <h2 className="section-title">FAQ</h2>
+          <h2 className="section-title">Questions fréquentes</h2>
           <div className="faq-list">
             {faqs.map((faq, i) => (
-              <div key={i} className="faq-item">
+              <div key={i} className={`faq-item ${openFaq === i ? 'active' : ''}`}>
                 <button
-                  className={`faq-question ${openFaq === i ? 'active' : ''}`}
+                  className="faq-question"
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 >
                   <span>{faq.question}</span>
-                  <span className="faq-icon">{openFaq === i ? '−' : '+'}</span>
+                  <span className="faq-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      {openFaq === i ? (
+                        <path d="M5 12h14" />
+                      ) : (
+                        <path d="M12 5v14M5 12h14" />
+                      )}
+                    </svg>
+                  </span>
                 </button>
-                {openFaq === i && (
-                  <div className="faq-answer">
-                    <p>{faq.answer}</p>
-                  </div>
-                )}
+                <div className="faq-answer-wrapper">
+                  {openFaq === i && (
+                    <div className="faq-answer">
+                      <p>{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -200,20 +253,25 @@ export default function InfluenceTest() {
 
       {/* Final CTA */}
       <section className="final-cta">
+        <div className="final-blur final-blur-1"></div>
+        <div className="final-blur final-blur-2"></div>
         <div className="container">
-          <h2 className="final-cta-title">
-            Ton contenu mérite d'être vu. <span className="highlight">Et rémunéré.</span>
-          </h2>
-          <p className="final-cta-subtitle">
-            Collabore. Choisis. Gagne.
-          </p>
-          <div className="final-cta-buttons">
-            <a href="https://onelink.to/qpqfep" className="btn-primary large">
-              🔥 Rejoindre la nouvelle ère
-            </a>
-            <a href="https://onelink.to/qpqfep" className="btn-secondary large">
-              👉 Je crée mon profil maintenant
-            </a>
+          <div className="final-cta-content">
+            <h2 className="final-cta-title">
+              Ton contenu mérite d'être vu. <span className="gradient-text">Et rémunéré.</span>
+            </h2>
+            <p className="final-cta-subtitle">
+              Collabore. Choisis. Gagne.
+            </p>
+            <div className="final-cta-buttons">
+              <a href="https://onelink.to/qpqfep" className="btn-primary large">
+                <span className="btn-gradient"></span>
+                <span className="btn-text">🔥 Rejoindre la nouvelle ère</span>
+              </a>
+              <a href="https://onelink.to/qpqfep" className="btn-outline large">
+                <span className="btn-text">👉 Je crée mon profil maintenant</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -221,73 +279,147 @@ export default function InfluenceTest() {
       <Footer />
 
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
         .page {
           background: #ffffff;
-          color: #1a1a1a;
-          min-height: 100vh;
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          overflow-x: hidden;
         }
 
         .container {
-          max-width: 1200px;
+          max-width: 1280px;
           margin: 0 auto;
-          padding: 0 24px;
+          padding: 0 5%;
         }
 
         /* Hero Section */
         .hero {
-          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-          padding: 140px 24px 100px;
           position: relative;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 140px 5% 120px;
+          background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
           overflow: hidden;
         }
 
-        .hero::before {
-          content: '';
+        .hero-blur {
           position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: radial-gradient(circle at 20% 50%, rgba(41, 96, 246, 0.1) 0%, transparent 50%);
+          border-radius: 50%;
+          filter: blur(100px);
+          opacity: 0.3;
+          pointer-events: none;
+        }
+
+        .hero-blur-1 {
+          width: 600px;
+          height: 600px;
+          background: #2960f6;
+          top: -200px;
+          left: -100px;
+          animation: float 20s ease-in-out infinite;
+        }
+
+        .hero-blur-2 {
+          width: 500px;
+          height: 500px;
+          background: #4a90f7;
+          bottom: -150px;
+          right: -100px;
+          animation: float 15s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+          0%, 100% { transform: translate(0, 0); }
+          50% { transform: translate(50px, 30px); }
+        }
+
+        .hero-gradient {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse at center, transparent 0%, rgba(15, 23, 42, 0.8) 70%);
           pointer-events: none;
         }
 
         .hero-container {
-          max-width: 1000px;
-          margin: 0 auto;
-          text-align: center;
           position: relative;
-          z-index: 1;
+          z-index: 2;
+          text-align: center;
+          max-width: 1000px;
+        }
+
+        .hero-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          padding: 10px 24px;
+          background: rgba(41, 96, 246, 0.15);
+          backdrop-filter: blur(20px);
+          border: 1px solid rgba(41, 96, 246, 0.3);
+          border-radius: 100px;
+          color: #60a5fa;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 32px;
+          animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.8; transform: scale(1.02); }
+        }
+
+        .badge-dot {
+          width: 6px;
+          height: 6px;
+          background: #60a5fa;
+          border-radius: 50%;
+          animation: blink 2s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.3; }
         }
 
         .hero-title {
-          font-size: 56px;
+          font-size: 72px;
           font-weight: 800;
-          line-height: 1.2;
-          color: #ffffff;
-          margin: 0 0 24px 0;
+          line-height: 1.1;
           letter-spacing: -0.02em;
+          color: #ffffff;
+          margin: 0 0 32px 0;
+          font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
         }
 
-        .hero-title .highlight {
-          background: linear-gradient(135deg, #2960f6 0%, #4a90f7 100%);
+        .gradient-text {
+          background: linear-gradient(135deg, #2960f6 0%, #60a5fa 50%, #2960f6 100%);
+          background-size: 200% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+          to { background-position: 200% center; }
         }
 
         .hero-subtitle {
-          font-size: 36px;
+          font-size: 42px;
           font-weight: 700;
           color: #ffffff;
           margin: 0 0 32px 0;
+          letter-spacing: -0.01em;
         }
 
         .hero-description {
           font-size: 20px;
-          line-height: 1.6;
+          line-height: 1.7;
           color: #cbd5e1;
-          margin: 0 0 20px 0;
+          margin: 0 0 16px 0;
           max-width: 800px;
           margin-left: auto;
           margin-right: auto;
@@ -301,47 +433,77 @@ export default function InfluenceTest() {
         }
 
         .hero-cta {
-          margin-bottom: 32px;
+          margin-bottom: 80px;
         }
 
-        .hero-badge {
-          display: inline-block;
-          padding: 12px 24px;
-          background: rgba(41, 96, 246, 0.1);
-          border: 2px solid rgba(41, 96, 246, 0.3);
-          border-radius: 50px;
-          color: #60a5fa;
-          font-weight: 600;
-          font-size: 16px;
-        }
-
-        /* Buttons */
         .btn-primary {
-          display: inline-block;
-          padding: 18px 40px;
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px 48px;
           background: linear-gradient(135deg, #2960f6 0%, #4a90f7 100%);
           color: #ffffff;
           border-radius: 12px;
           font-size: 18px;
           font-weight: 700;
           text-decoration: none;
-          transition: all 0.3s ease;
-          box-shadow: 0 8px 24px rgba(41, 96, 246, 0.3);
+          overflow: hidden;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 10px 40px rgba(41, 96, 246, 0.4);
+          border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .btn-primary:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 12px 32px rgba(41, 96, 246, 0.4);
+          transform: translateY(-3px);
+          box-shadow: 0 15px 60px rgba(41, 96, 246, 0.5);
         }
 
         .btn-primary.large {
-          padding: 22px 48px;
+          padding: 24px 56px;
           font-size: 20px;
         }
 
-        .btn-secondary {
-          display: inline-block;
-          padding: 18px 40px;
+        .btn-gradient {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+          transform: translateX(-100%);
+          animation: slide 3s ease-in-out infinite;
+        }
+
+        @keyframes slide {
+          to { transform: translateX(100%); }
+        }
+
+        .btn-text {
+          position: relative;
+          z-index: 1;
+        }
+
+        .btn-white {
+          display: inline-flex;
+          align-items: center;
+          padding: 20px 48px;
+          background: #ffffff;
+          color: #2960f6;
+          border-radius: 12px;
+          font-size: 18px;
+          font-weight: 700;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-white:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 15px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-outline {
+          display: inline-flex;
+          align-items: center;
+          padding: 20px 48px;
           background: transparent;
           color: #2960f6;
           border: 2px solid #2960f6;
@@ -352,212 +514,343 @@ export default function InfluenceTest() {
           transition: all 0.3s ease;
         }
 
-        .btn-secondary:hover {
+        .btn-outline:hover {
           background: #2960f6;
           color: #ffffff;
         }
 
-        .btn-secondary.large {
-          padding: 22px 48px;
+        .btn-outline.large {
+          padding: 24px 56px;
           font-size: 20px;
+        }
+
+        .scroll-indicator {
+          position: absolute;
+          bottom: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: opacity 0.3s ease;
+        }
+
+        .scroll-arrow {
+          width: 24px;
+          height: 40px;
+          border: 2px solid rgba(255, 255, 255, 0.4);
+          border-radius: 20px;
+          position: relative;
+        }
+
+        .scroll-arrow::before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 6px;
+          height: 6px;
+          background: rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+          animation: scrollDown 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollDown {
+          0% { top: 8px; opacity: 1; }
+          100% { top: 24px; opacity: 0; }
         }
 
         /* Why Section */
         .why-section {
-          padding: 100px 24px;
+          padding: 140px 5%;
           background: #fafafa;
+          position: relative;
+        }
+
+        .section-header {
+          text-align: center;
+          margin-bottom: 80px;
         }
 
         .section-title {
-          font-size: 42px;
+          font-size: 52px;
           font-weight: 800;
-          text-align: center;
-          margin: 0 0 24px 0;
           color: #1a1a1a;
+          margin: 0 0 24px 0;
+          letter-spacing: -0.02em;
+          font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
         }
 
         .section-intro {
           font-size: 20px;
-          text-align: center;
           color: #64748b;
-          margin: 0 0 60px 0;
           max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
+          margin: 0 auto;
+          line-height: 1.7;
         }
 
         .features-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 32px;
-          margin-bottom: 48px;
+          margin-bottom: 80px;
         }
 
         .feature-card {
+          position: relative;
           background: #ffffff;
-          padding: 40px 32px;
-          border-radius: 16px;
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-          transition: all 0.3s ease;
-          border: 2px solid transparent;
+          padding: 48px 40px;
+          border-radius: 24px;
+          border: 2px solid rgba(41, 96, 246, 0.1);
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          overflow: hidden;
+        }
+
+        .feature-card::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(41, 96, 246, 0.05) 0%, transparent 100%);
+          opacity: 0;
+          transition: opacity 0.4s;
         }
 
         .feature-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+          transform: translateY(-8px);
           border-color: #2960f6;
+          box-shadow: 0 20px 60px rgba(41, 96, 246, 0.15);
+        }
+
+        .feature-card:hover::before {
+          opacity: 1;
+        }
+
+        .feature-number {
+          position: absolute;
+          top: 24px;
+          right: 24px;
+          font-size: 72px;
+          font-weight: 800;
+          color: rgba(41, 96, 246, 0.05);
+          line-height: 1;
+          font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
         }
 
         .feature-icon {
-          font-size: 48px;
-          margin-bottom: 20px;
+          font-size: 56px;
+          margin-bottom: 24px;
         }
 
         .feature-card h3 {
-          font-size: 20px;
-          font-weight: 600;
+          font-size: 22px;
+          font-weight: 700;
           line-height: 1.4;
           color: #1a1a1a;
-          margin: 0;
+          margin: 0 0 20px 0;
+        }
+
+        .feature-line {
+          width: 60px;
+          height: 4px;
+          background: linear-gradient(90deg, #2960f6 0%, transparent 100%);
+          border-radius: 2px;
         }
 
         .final-point {
           text-align: center;
-          margin-top: 48px;
+        }
+
+        .final-point-inner {
+          display: inline-flex;
+          align-items: center;
+          gap: 16px;
+          padding: 32px 48px;
+          background: linear-gradient(135deg, rgba(41, 96, 246, 0.05) 0%, rgba(41, 96, 246, 0.1) 100%);
+          border: 2px solid rgba(41, 96, 246, 0.2);
+          border-radius: 100px;
         }
 
         .final-point p {
-          font-size: 24px;
+          font-size: 26px;
           color: #2960f6;
-          font-weight: 600;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .sparkle {
+          font-size: 28px;
+          animation: sparkle 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+          0%, 100% { transform: scale(1) rotate(0deg); }
+          50% { transform: scale(1.2) rotate(180deg); }
         }
 
         /* Exclusivity Section */
         .exclusivity-section {
-          padding: 100px 24px;
+          padding: 140px 5%;
           background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-          color: #ffffff;
+          position: relative;
         }
 
         .exclusivity-section .section-title {
           color: #ffffff;
-          margin-bottom: 48px;
+          margin-bottom: 60px;
         }
 
         .exclusivity-content {
-          max-width: 800px;
+          max-width: 900px;
           margin: 0 auto;
         }
 
         .exclusivity-text {
-          font-size: 22px;
+          font-size: 24px;
           line-height: 1.7;
           text-align: center;
-          margin-bottom: 48px;
           color: #cbd5e1;
+          margin-bottom: 60px;
         }
 
         .mission-box {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          padding: 48px;
           background: rgba(41, 96, 246, 0.1);
+          backdrop-filter: blur(20px);
           border: 2px solid rgba(41, 96, 246, 0.3);
-          border-radius: 16px;
-          padding: 40px;
-          text-align: center;
+          border-radius: 24px;
         }
 
         .mission-icon {
-          font-size: 56px;
-          margin-bottom: 20px;
+          font-size: 80px;
+          flex-shrink: 0;
+        }
+
+        .mission-content {
+          flex: 1;
+        }
+
+        .mission-label {
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #60a5fa;
+          margin: 0 0 12px 0;
         }
 
         .mission-text {
-          font-size: 20px;
+          font-size: 22px;
           line-height: 1.6;
           color: #ffffff;
           margin: 0;
+          font-weight: 600;
         }
 
         /* Testimonials Section */
         .testimonials-section {
-          padding: 100px 24px;
+          padding: 140px 5%;
           background: #ffffff;
         }
 
         .testimonials-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
           gap: 40px;
-          margin-top: 60px;
+          margin-top: 80px;
         }
 
         .testimonial-card {
           background: #ffffff;
-          border-radius: 16px;
+          border-radius: 24px;
           overflow: hidden;
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-          transition: all 0.3s ease;
+          border: 2px solid #f3f4f6;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .testimonial-card:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+          transform: translateY(-10px);
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+          border-color: #10b981;
         }
 
         .video-placeholder {
+          position: relative;
+          height: 260px;
           background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-          height: 240px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          position: relative;
+          overflow: hidden;
         }
 
-        .play-icon {
-          width: 80px;
-          height: 80px;
-          background: rgba(255, 255, 255, 0.9);
+        .video-bg {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+        }
+
+        .play-button {
+          position: relative;
+          width: 90px;
+          height: 90px;
+          background: rgba(255, 255, 255, 0.95);
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 32px;
-          color: #10b981;
-          margin-bottom: 16px;
+          margin-bottom: 20px;
           cursor: pointer;
           transition: all 0.3s ease;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
         }
 
-        .play-icon:hover {
+        .play-button svg {
+          width: 32px;
+          height: 32px;
+          color: #10b981;
+          margin-left: 4px;
+        }
+
+        .testimonial-card:hover .play-button {
           transform: scale(1.1);
           background: #ffffff;
         }
 
         .video-label {
-          color: #ffffff;
+          position: relative;
+          color: rgba(255, 255, 255, 0.95);
           font-size: 16px;
-          font-weight: 600;
+          font-weight: 700;
+          letter-spacing: 0.5px;
         }
 
         .testimonial-content {
-          padding: 32px;
+          padding: 36px;
+        }
+
+        .testimonial-header {
+          margin-bottom: 20px;
         }
 
         .testimonial-name {
-          font-size: 18px;
-          font-weight: 700;
+          font-size: 20px;
+          font-weight: 800;
           color: #1a1a1a;
-          margin: 0 0 16px 0;
+          margin: 0 0 6px 0;
         }
 
         .testimonial-handle {
-          color: #2960f6;
+          font-size: 16px;
           font-weight: 600;
+          color: #2960f6;
+          margin: 0;
         }
 
         .testimonial-quote {
           font-size: 16px;
-          line-height: 1.6;
+          line-height: 1.7;
           color: #64748b;
           margin: 0;
           font-style: italic;
@@ -565,90 +858,128 @@ export default function InfluenceTest() {
 
         /* CTA Mid Section */
         .cta-mid-section {
-          padding: 100px 24px;
+          position: relative;
+          padding: 140px 5%;
           background: linear-gradient(135deg, #2960f6 0%, #4a90f7 100%);
+          overflow: hidden;
+        }
+
+        .cta-blur {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(100px);
+          opacity: 0.4;
+        }
+
+        .cta-blur-1 {
+          width: 500px;
+          height: 500px;
+          background: rgba(255, 255, 255, 0.2);
+          top: -200px;
+          left: -100px;
+        }
+
+        .cta-blur-2 {
+          width: 400px;
+          height: 400px;
+          background: rgba(255, 255, 255, 0.15);
+          bottom: -150px;
+          right: -100px;
+        }
+
+        .cta-content {
+          position: relative;
+          z-index: 2;
           text-align: center;
         }
 
         .cta-title {
-          font-size: 42px;
+          font-size: 48px;
           font-weight: 800;
           color: #ffffff;
-          margin: 0 0 16px 0;
+          margin: 0 0 20px 0;
+          letter-spacing: -0.02em;
+          font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
         }
 
         .cta-subtitle {
-          font-size: 20px;
+          font-size: 22px;
           color: rgba(255, 255, 255, 0.9);
-          margin: 0 0 40px 0;
-        }
-
-        .cta-mid-section .btn-primary {
-          background: #ffffff;
-          color: #2960f6;
-        }
-
-        .cta-mid-section .btn-primary:hover {
-          background: #f8fafc;
+          margin: 0 0 48px 0;
+          font-weight: 600;
         }
 
         /* FAQ Section */
         .faq-section {
-          padding: 100px 24px;
+          padding: 140px 5%;
           background: #fafafa;
         }
 
         .faq-list {
-          max-width: 800px;
-          margin: 60px auto 0;
+          max-width: 900px;
+          margin: 80px auto 0;
         }
 
         .faq-item {
           background: #ffffff;
-          border-radius: 12px;
-          margin-bottom: 16px;
+          border: 2px solid #f3f4f6;
+          border-radius: 16px;
+          margin-bottom: 20px;
           overflow: hidden;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+          transition: all 0.3s ease;
+        }
+
+        .faq-item.active {
+          border-color: #2960f6;
+          box-shadow: 0 8px 24px rgba(41, 96, 246, 0.1);
         }
 
         .faq-question {
           width: 100%;
-          padding: 24px 32px;
+          padding: 28px 32px;
           background: none;
           border: none;
           text-align: left;
-          font-size: 18px;
-          font-weight: 600;
+          font-size: 19px;
+          font-weight: 700;
           color: #1a1a1a;
           cursor: pointer;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          transition: all 0.3s ease;
+          gap: 24px;
+          transition: color 0.3s ease;
         }
 
-        .faq-question:hover {
-          color: #2960f6;
-        }
-
-        .faq-question.active {
+        .faq-item.active .faq-question {
           color: #2960f6;
         }
 
         .faq-icon {
-          font-size: 24px;
-          font-weight: 300;
+          flex-shrink: 0;
+          width: 28px;
+          height: 28px;
           color: #2960f6;
+          transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+          transform: rotate(180deg);
+        }
+
+        .faq-answer-wrapper {
+          overflow: hidden;
+          transition: all 0.3s ease;
         }
 
         .faq-answer {
-          padding: 0 32px 24px;
+          padding: 0 32px 28px;
           animation: slideDown 0.3s ease;
         }
 
         .faq-answer p {
-          font-size: 16px;
-          line-height: 1.6;
+          font-size: 17px;
+          line-height: 1.7;
           color: #64748b;
           margin: 0;
         }
@@ -666,36 +997,64 @@ export default function InfluenceTest() {
 
         /* Final CTA */
         .final-cta {
-          padding: 120px 24px;
-          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+          position: relative;
+          padding: 160px 5%;
+          background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+          overflow: hidden;
+        }
+
+        .final-blur {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.3;
+        }
+
+        .final-blur-1 {
+          width: 700px;
+          height: 700px;
+          background: #2960f6;
+          top: -300px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .final-blur-2 {
+          width: 500px;
+          height: 500px;
+          background: #4a90f7;
+          bottom: -200px;
+          right: -100px;
+        }
+
+        .final-cta-content {
+          position: relative;
+          z-index: 2;
           text-align: center;
+          max-width: 1000px;
+          margin: 0 auto;
         }
 
         .final-cta-title {
-          font-size: 52px;
+          font-size: 64px;
           font-weight: 800;
           color: #ffffff;
-          margin: 0 0 24px 0;
-          line-height: 1.2;
-        }
-
-        .final-cta-title .highlight {
-          background: linear-gradient(135deg, #2960f6 0%, #4a90f7 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+          margin: 0 0 32px 0;
+          line-height: 1.1;
+          letter-spacing: -0.02em;
+          font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
         }
 
         .final-cta-subtitle {
-          font-size: 28px;
-          font-weight: 600;
+          font-size: 32px;
+          font-weight: 700;
           color: #cbd5e1;
-          margin: 0 0 48px 0;
+          margin: 0 0 56px 0;
         }
 
         .final-cta-buttons {
           display: flex;
-          gap: 20px;
+          gap: 24px;
           justify-content: center;
           flex-wrap: wrap;
         }
@@ -703,50 +1062,51 @@ export default function InfluenceTest() {
         /* Responsive */
         @media (max-width: 768px) {
           .hero-title {
-            font-size: 36px;
+            font-size: 40px;
           }
 
           .hero-subtitle {
-            font-size: 24px;
-          }
-
-          .hero-description {
-            font-size: 18px;
+            font-size: 28px;
           }
 
           .section-title {
-            font-size: 32px;
+            font-size: 36px;
           }
 
-          .features-grid {
-            grid-template-columns: 1fr;
-          }
-
+          .features-grid,
           .testimonials-grid {
             grid-template-columns: 1fr;
           }
 
-          .final-cta-title {
-            font-size: 36px;
+          .mission-box {
+            flex-direction: column;
+            text-align: center;
           }
 
-          .final-cta-subtitle {
-            font-size: 20px;
+          .final-cta-title {
+            font-size: 40px;
           }
 
           .final-cta-buttons {
             flex-direction: column;
-            align-items: stretch;
           }
 
           .btn-primary.large,
-          .btn-secondary.large {
+          .btn-outline.large {
             width: 100%;
           }
         }
       `}</style>
 
       <style jsx global>{`
+        @font-face {
+          font-family: GRIFTER;
+          src: url('/fonts/grifterbold.otf') format("opentype");
+          font-weight: 700;
+          font-style: normal;
+          font-display: swap;
+        }
+
         body {
           background: #ffffff;
         }
