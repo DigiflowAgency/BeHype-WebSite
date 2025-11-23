@@ -227,8 +227,8 @@ export default function InfluenceTest() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials-section">
+      {/* Testimonials Section - MASQUÉE */}
+      {/* <section className="testimonials-section">
         <div className="container">
           <h2 className="section-title">Ils créent déjà avec BeHype</h2>
           <div className="testimonials-grid">
@@ -254,7 +254,7 @@ export default function InfluenceTest() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Mid Section */}
       <section className="cta-mid-section">
