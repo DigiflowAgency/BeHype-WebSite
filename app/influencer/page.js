@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 export default function Influencer() {
   const [openFaq, setOpenFaq] = useState(null)
   const [scrollY, setScrollY] = useState(0)
+  const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
     document.title = "Influenceurs - BEHYPE"
@@ -15,6 +16,18 @@ export default function Influencer() {
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const isMobile = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  }
+
+  const handleAppClick = (e) => {
+    if (!isMobile()) {
+      e.preventDefault()
+      setShowModal(true)
+    }
+    // Sur mobile, le lien fonctionne normalement
+  }
 
   const faqs = [
     {
@@ -147,7 +160,7 @@ export default function Influencer() {
           </p>
 
           <div className="hero-cta" data-aos="fade-up" data-aos-delay="400">
-            <a href="https://onelink.to/qpqfep" className="btn-primary">
+            <a href="https://onelink.to/qpqfep" className="btn-primary" onClick={handleAppClick}>
               <span className="btn-gradient"></span>
               <span className="btn-text">👉 Créer mon compte gratuitement</span>
             </a>
@@ -264,7 +277,7 @@ export default function Influencer() {
           <div className="cta-content">
             <h2 className="cta-title">🚀 Tu veux faire partie des Premiers créateurs mis en avant ?</h2>
             <p className="cta-subtitle">Places limitées pour le lancement officiel.</p>
-            <a href="https://onelink.to/qpqfep" className="btn-white">
+            <a href="https://onelink.to/qpqfep" className="btn-white" onClick={handleAppClick}>
               <span className="btn-text">👉 Créer mon profil maintenant</span>
             </a>
           </div>
@@ -319,11 +332,11 @@ export default function Influencer() {
               Collabore. Choisis. Gagne.
             </p>
             <div className="final-cta-buttons">
-              <a href="https://onelink.to/qpqfep" className="btn-primary large">
+              <a href="https://onelink.to/qpqfep" className="btn-primary large" onClick={handleAppClick}>
                 <span className="btn-gradient"></span>
                 <span className="btn-text">🔥 Rejoindre la nouvelle ère</span>
               </a>
-              <a href="https://onelink.to/qpqfep" className="btn-outline large">
+              <a href="https://onelink.to/qpqfep" className="btn-outline large" onClick={handleAppClick}>
                 <span className="btn-text">👉 Je crée mon profil maintenant</span>
               </a>
             </div>
@@ -332,6 +345,32 @@ export default function Influencer() {
       </section>
 
       <Footer />
+
+      {/* Modal Desktop - Téléchargement app */}
+      {showModal && (
+        <div className="modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowModal(false)}>
+              ✕
+            </button>
+            <div className="modal-icon">📱</div>
+            <h3 className="modal-title">Application mobile requise</h3>
+            <p className="modal-text">
+              Pour créer ton compte et rejoindre BeHype, tu dois télécharger notre application mobile ou ouvrir cette page sur ton téléphone.
+            </p>
+            <div className="modal-buttons">
+              <a
+                href="https://onelink.to/qpqfep"
+                className="modal-btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📲 Ouvrir sur mobile
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
@@ -1497,6 +1536,147 @@ export default function Influencer() {
           .btn-outline {
             padding: 14px 24px;
             font-size: 14px;
+          }
+        }
+
+        /* Modal Desktop */
+        .modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.8);
+          backdrop-filter: blur(8px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 10000;
+          padding: 20px;
+          animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        .modal-content {
+          background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+          border: 2px solid rgba(41, 96, 246, 0.3);
+          border-radius: 24px;
+          padding: 48px;
+          max-width: 500px;
+          width: 100%;
+          position: relative;
+          box-shadow: 0 20px 60px rgba(41, 96, 246, 0.2);
+          animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        .modal-close {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          color: #ffffff;
+          font-size: 24px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+          background: rgba(255, 255, 255, 0.2);
+          transform: rotate(90deg);
+        }
+
+        .modal-icon {
+          font-size: 64px;
+          text-align: center;
+          margin-bottom: 24px;
+        }
+
+        .modal-title {
+          font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
+          font-size: 28px;
+          font-weight: 800;
+          color: #ffffff;
+          text-align: center;
+          margin-bottom: 16px;
+          line-height: 1.2;
+        }
+
+        .modal-text {
+          font-size: 16px;
+          line-height: 1.7;
+          color: #cbd5e1;
+          text-align: center;
+          margin-bottom: 32px;
+        }
+
+        .modal-buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .modal-btn-primary {
+          background: linear-gradient(135deg, #2960f6 0%, #1d50d6 100%);
+          color: #ffffff;
+          padding: 16px 32px;
+          border-radius: 12px;
+          font-weight: 600;
+          font-size: 16px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          border: none;
+          box-shadow: 0 4px 16px rgba(41, 96, 246, 0.3);
+          text-decoration: none;
+          display: block;
+        }
+
+        .modal-btn-primary:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(41, 96, 246, 0.4);
+        }
+
+        @media (max-width: 768px) {
+          .modal-content {
+            padding: 32px 24px;
+          }
+
+          .modal-title {
+            font-size: 24px;
+          }
+
+          .modal-text {
+            font-size: 15px;
+          }
+
+          .modal-icon {
+            font-size: 48px;
           }
         }
       `}</style>
