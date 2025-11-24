@@ -455,13 +455,13 @@ export default function HomeNavbar() {
         }
 
         .behype_navbar.black-navbar .navbar_button {
-          background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%) !important;
-          color: #000000 !important;
+          background: linear-gradient(135deg, #2960f6 0%, #1d50d6 100%) !important;
+          color: #ffffff !important;
           border: none !important;
         }
 
         .behype_navbar.black-navbar .navbar_button:hover {
-          box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3) !important;
+          box-shadow: 0 8px 24px rgba(41, 96, 246, 0.4) !important;
         }
 
         .behype_navbar.black-navbar .navbar_button-alternate {

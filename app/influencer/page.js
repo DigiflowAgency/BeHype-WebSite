@@ -262,7 +262,7 @@ export default function Influencer() {
         <div className="cta-blur cta-blur-2"></div>
         <div className="container">
           <div className="cta-content">
-            <h2 className="cta-title">🚀 Tu veux faire partie des 1ers créateurs mis en avant ?</h2>
+            <h2 className="cta-title">🚀 Tu veux faire partie des Premiers créateurs mis en avant ?</h2>
             <p className="cta-subtitle">Places limitées pour le lancement officiel.</p>
             <a href="https://onelink.to/qpqfep" className="btn-white">
               <span className="btn-text">👉 Créer mon profil maintenant</span>
@@ -739,7 +739,7 @@ export default function Influencer() {
 
         .features-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-template-columns: repeat(2, 1fr);
           gap: 32px;
           margin-bottom: 80px;
         }
@@ -779,7 +779,7 @@ export default function Influencer() {
           right: 24px;
           font-size: 72px;
           font-weight: 800;
-          color: rgba(41, 96, 246, 0.05);
+          color: rgba(41, 96, 246, 0.15);
           line-height: 1;
           font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
         }
@@ -849,7 +849,7 @@ export default function Influencer() {
         }
 
         .exclusivity-content {
-          max-width: 900px;
+          max-width: 1200px;
           margin: 0 auto;
         }
 
