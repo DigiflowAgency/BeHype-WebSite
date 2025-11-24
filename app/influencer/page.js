@@ -1093,6 +1093,7 @@ export default function Influencer() {
           font-weight: 800;
           color: #ffffff;
           margin: 0 0 20px 0;
+          line-height: 1.4;
           letter-spacing: -0.02em;
           font-family: GRIFTER, 'Plus Jakarta Sans', sans-serif;
         }
