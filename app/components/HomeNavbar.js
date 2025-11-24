@@ -436,7 +436,7 @@ export default function HomeNavbar() {
         }
 
         .behype_navbar.black-navbar .behype_nav-link:hover {
-          color: #D4AF37 !important;
+          color: #2960f6 !important;
         }
 
         /* Active page indicator - PC only */
@@ -466,13 +466,13 @@ export default function HomeNavbar() {
 
         .behype_navbar.black-navbar .navbar_button-alternate {
           background: transparent !important;
-          color: #D4AF37 !important;
-          border: 1px solid rgba(212, 175, 55, 0.4) !important;
+          color: #2960f6 !important;
+          border: 1px solid rgba(41, 96, 246, 0.4) !important;
         }
 
         .behype_navbar.black-navbar .navbar_button-alternate:hover {
-          background: rgba(212, 175, 55, 0.1) !important;
-          border-color: #D4AF37 !important;
+          background: rgba(41, 96, 246, 0.1) !important;
+          border-color: #2960f6 !important;
         }
 
         /* Navbar Layout: Links left, Logo center, CTA right */
