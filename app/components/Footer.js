@@ -45,8 +45,8 @@ export default function Footer() {
 
             <div className="footer-links">
               <h4 style={{ fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '20px', color: 'white' }}>Légal</h4>
-              <Link href="/privacy" prefetch={false} style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Confidentialité</Link>
-              <Link href="/terms" prefetch={false} style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Conditions</Link>
+              <Link href="/privacy-policy" prefetch={false} style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Confidentialité</Link>
+              <Link href="/terms-of-use" prefetch={false} style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Conditions</Link>
               <Link href="/cookies" prefetch={false} style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Cookies</Link>
             </div>
           </div>
