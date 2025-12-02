@@ -50,6 +50,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
+        {/* Google Analytics - DOIT être en premier pour Search Console */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-51GFV221RX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-51GFV221RX');
+            `,
+          }}
+        />
+
         {/* Preconnect pour ressources critiques */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://player.vimeo.com" />
@@ -67,21 +80,6 @@ export default function RootLayout({ children }) {
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-T3PJSCWZ');
-          `}
-        </Script>
-
-        {/* Google Analytics */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-51GFV221RX"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-51GFV221RX');
           `}
         </Script>
 
