@@ -42,7 +42,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: "G-CWJWKLZM41",
+    google: "G-51GFV221RX",
   },
 };
 
@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
         {/* Google Analytics */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-CWJWKLZM41"
+          src="https://www.googletagmanager.com/gtag/js?id=G-51GFV221RX"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -81,8 +81,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('set', 'developer_id.dZGVlNj', true);
-            gtag('config', 'G-CWJWKLZM41');
+            gtag('config', 'G-51GFV221RX');
           `}
         </Script>
 
