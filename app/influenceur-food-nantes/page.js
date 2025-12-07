@@ -14,5 +14,22 @@ export const metadata = {
 }
 
 export default function Page() {
-  return <CityPageTemplate city="Nantes" citySlug="nantes" region="Pays de la Loire" influencers={["@nantesfood", "@foodienantes", "@nantesgourmand"]} cityData={cityData["Nantes"]} />
+  const influencers = [
+    { name: "Nantes Food", handle: "@nantesfood", slug: "nantesfood" },
+    { name: "Foodie Nantes", handle: "@foodienantes", slug: "foodienantes" },
+    { name: "Nantes Gourmand", handle: "@nantesgourmand", slug: "nantesgourmand" },
+    { name: "LNH Nantes", handle: "@lnh_nantes", slug: "lnh_nantes" },
+    { name: "Nantes Food Guide", handle: "@nantes_food_guide", slug: "nantes_food_guide" },
+    { name: "Bon Appétit Nantes", handle: "@bonappetit_nantes", slug: "bonappetit_nantes" }
+  ]
+
+  return (
+    <CityPageTemplate
+      city="Nantes"
+      citySlug="nantes"
+      region="Pays de la Loire"
+      influencers={influencers}
+      cityData={cityData["Nantes"]}
+    />
+  )
 }
