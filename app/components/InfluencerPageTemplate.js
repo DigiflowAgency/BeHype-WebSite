@@ -5,6 +5,106 @@ import Link from 'next/link'
 import HomeNavbar from './HomeNavbar'
 import Footer from './Footer'
 
+// Mapping des influenceurs par ville pour le maillage interne
+const influencersByCity = {
+  "Paris": [
+    { name: "Strop Bon", handle: "@strop_bon", slug: "strop_bon" },
+    { name: "Alan Food", handle: "@alan_food", slug: "alan_food" },
+    { name: "Le Requin 92", handle: "@lerequin92officiel", slug: "lerequin92officiel" },
+    { name: "My Bouffe", handle: "@my.bouffe", slug: "my.bouffe" },
+    { name: "Le Paris d Alexis", handle: "@leparisdalexis", slug: "leparisdalexis" },
+    { name: "Hunter Food", handle: "@hunterfood.fr", slug: "hunterfood.fr" },
+    { name: "Paname a Faim", handle: "@panameafaim", slug: "panameafaim" },
+    { name: "Paris ZigZag", handle: "@pariszigzag", slug: "pariszigzag" },
+    { name: "Food Lovers Paris", handle: "@foodloverspvris", slug: "foodloverspvris" },
+    { name: "The Paris Food Guide", handle: "@theparisfoodguide", slug: "theparisfoodguide" },
+    { name: "Paris Secret", handle: "@parissecret", slug: "parissecret" },
+    { name: "Top Paris Resto", handle: "@topparisresto", slug: "topparisresto" },
+    { name: "Bonnes Adresses de Paris", handle: "@bonnesadressesdeparis", slug: "bonnesadressesdeparis" },
+    { name: "Le Guide Ultime", handle: "@leguideultime", slug: "leguideultime" },
+    { name: "La Grande Bouffe", handle: "@lagrande_bouffe", slug: "lagrande_bouffe" },
+    { name: "Cook With Bash", handle: "@cookwithbash", slug: "cookwithbash" },
+    { name: "Spicy Noemie", handle: "@spicynoemie", slug: "spicynoemie" },
+    { name: "Le Street Foodist", handle: "@lestreetfoodist", slug: "lestreetfoodist" }
+  ],
+  "Toulouse": [
+    { name: "Toulouse Food Guide", handle: "@toulouse.foodguide", slug: "toulouse.foodguide" },
+    { name: "Toulouzinzins", handle: "@toulouzinzins", slug: "toulouzinzins" },
+    { name: "Le Bonbon Toulouse", handle: "@le_bonbon_toulouse", slug: "le_bonbon_toulouse" },
+    { name: "Toulouse By Night Fever", handle: "@toulousebynightfever", slug: "toulousebynightfever" },
+    { name: "Epicu Toulouse Food", handle: "@epicutoulouse_food", slug: "epicutoulouse_food" },
+    { name: "La Food Locale", handle: "@lafoodlocale", slug: "lafoodlocale" },
+    { name: "Poodle The Noodle TLS", handle: "@poodlethenoodle.tls", slug: "poodlethenoodle.tls" },
+    { name: "Hey Sisters Toulouse", handle: "@heysisterstoulouse", slug: "heysisterstoulouse" }
+  ],
+  "Lille": [
+    { name: "Sortir Lille", handle: "@sortir.lille", slug: "sortir.lille" },
+    { name: "Lille Food Guide", handle: "@lille.foodguide", slug: "lille.foodguide" },
+    { name: "Food Lille and Co", handle: "@foodlilleandco", slug: "foodlilleandco" },
+    { name: "Lille Foood", handle: "@lillefoood", slug: "lillefoood" },
+    { name: "Lille Addict", handle: "@lille_addict", slug: "lille_addict" },
+    { name: "Les Sorties d'une Lilloise", handle: "@lessortiesdunelilloise", slug: "lessortiesdunelilloise" },
+    { name: "Plans en Nord", handle: "@plansennord", slug: "plansennord" },
+    { name: "Le Bonbon Lille", handle: "@le_bonbon_lille", slug: "le_bonbon_lille" },
+    { name: "Food Lovers Lille", handle: "@foodlovers_lille", slug: "foodlovers_lille" },
+    { name: "Koul Halal", handle: "@koul_halal", slug: "koul_halal" },
+    { name: "Halal Food Lille", handle: "@halal.food.lille", slug: "halal.food.lille" }
+  ],
+  "Bordeaux": [
+    { name: "Tristan Cuisine", handle: "@tristan_cuisine", slug: "tristan_cuisine" },
+    { name: "Edouard Cuisine", handle: "@edouardcuisine", slug: "edouardcuisine" },
+    { name: "Bordeaux Food Club", handle: "@bordeauxfoodclub", slug: "bordeauxfoodclub" }
+  ],
+  "Nice": [
+    { name: "Foode Nice", handle: "@foodenice", slug: "foodenice" },
+    { name: "Food Lover Nice", handle: "@food.lover.nice", slug: "food.lover.nice" },
+    { name: "Saspi Mathieu", handle: "@saspi.mathieu", slug: "saspi.mathieu" },
+    { name: "Ambre Verywhere", handle: "@ambreverywhere", slug: "ambreverywhere" },
+    { name: "Côte d'Azur Spots", handle: "@cotedazurspots", slug: "cotedazurspots" },
+    { name: "Valentin Donato", handle: "@valentin.donato", slug: "valentin.donato" },
+    { name: "Nice Food Guide", handle: "@nice_foodguide", slug: "nice_foodguide" },
+    { name: "We Like Côte d'Azur", handle: "@welikecotedazur", slug: "welikecotedazur" },
+    { name: "Nature Voyages Découvertes", handle: "@nature_voyages_decouvertes", slug: "nature_voyages_decouvertes" },
+    { name: "Amour Boire et Manger", handle: "@amour.boire.et.manger", slug: "amour.boire.et.manger" },
+    { name: "Nice Storique", handle: "@nicestorique", slug: "nicestorique" },
+    { name: "Rémi Ragnar", handle: "@remi_ragnar", slug: "remi_ragnar" },
+    { name: "Twins B Fit", handle: "@twinsb_fit", slug: "twinsb_fit" },
+    { name: "Roro Cuistot", handle: "@roro_cuistot", slug: "roro_cuistot" }
+  ],
+  "Lyon": [
+    { name: "C'est Cherbon", handle: "@cest_cherbon", slug: "cest_cherbon" },
+    { name: "Lyon Tasting", handle: "@lyontasting", slug: "lyontasting" },
+    { name: "On Mange Où à Lyon", handle: "@onmangeoualyon", slug: "onmangeoualyon" },
+    { name: "Tu Viens Manger", handle: "@tuviensmanger", slug: "tuviensmanger" },
+    { name: "Lyon Foodies", handle: "@lyonfoodies", slug: "lyonfoodies" },
+    { name: "Wanna Eat Food", handle: "@wanna.eatfood", slug: "wanna.eatfood" },
+    { name: "Food By Lyon", handle: "@foodbylyon", slug: "foodbylyon" },
+    { name: "Food et Toi Lyon", handle: "@foodetoi_lyon", slug: "foodetoi_lyon" },
+    { name: "Food Lyon", handle: "@food.lyon", slug: "food.lyon" },
+    { name: "Monsieur Voyage", handle: "@monsieur.voyagee", slug: "monsieur.voyagee" }
+  ],
+  "Marseille": [
+    { name: "Food Marseille", handle: "@foodmarseille", slug: "foodmarseille" },
+    { name: "Marseille Bon Plan", handle: "@marseille_bon_plan", slug: "marseille_bon_plan" },
+    { name: "Chez Deborah", handle: "@chezdeborah", slug: "chezdeborah" },
+    { name: "Food Mars 13", handle: "@foodmars13", slug: "foodmars13" },
+    { name: "The Bibendum Marseille", handle: "@thebibendummarseille", slug: "thebibendummarseille" },
+    { name: "Le Food Reporter Marseillais", handle: "@le_food_reporter_marseillais", slug: "le_food_reporter_marseillais" },
+    { name: "I Love Foodeuh", handle: "@ilovefoodeuh", slug: "ilovefoodeuh" },
+    { name: "Marseille My City", handle: "@marseille.my.city", slug: "marseille.my.city" },
+    { name: "On Mange Ou Mer", handle: "@onmangeoumer", slug: "onmangeoumer" },
+    { name: "Un Creux au Bide 13", handle: "@uncreuxaubide13", slug: "uncreuxaubide13" },
+    { name: "Marseille Bonnes Adresses", handle: "@marseille_bonnes_adresses", slug: "marseille_bonnes_adresses" },
+    { name: "Foodie Marseille", handle: "@foodie_marseille", slug: "foodie_marseille" },
+    { name: "Provence Gourmande", handle: "@provencegourmande", slug: "provencegourmande" },
+    { name: "Aix-en-Provence Foodie", handle: "@aixenprovence.foodie", slug: "aixenprovence.foodie" },
+    { name: "Bouches-du-Rhône Food", handle: "@bouches_du_rhone_food", slug: "bouches_du_rhone_food" },
+    { name: "Top Restos PACA", handle: "@toprestospaca", slug: "toprestospaca" },
+    { name: "Marseille Food Lover", handle: "@marseille_food_lover", slug: "marseille_food_lover" },
+    { name: "La Good News Marseille", handle: "@lagoodnewsmarseille", slug: "lagoodnewsmarseille" }
+  ]
+}
+
 export default function InfluencerPageTemplate({
   name,
   handle,
@@ -12,13 +112,11 @@ export default function InfluencerPageTemplate({
   region,
   instagramUrl,
   tiktokUrl,
-  followers,
   description,
   specialty,
   contentStyle,
   whyCollaborate,
   popularContent,
-  stats,
   faq
 }) {
   const [openFaq, setOpenFaq] = useState(null)
@@ -94,20 +192,6 @@ export default function InfluencerPageTemplate({
           </div>
         </div>
       </section>
-
-      {/* Stats Section */}
-      {stats && (
-        <section className="stats-section">
-          <div className="stats-grid">
-            {stats.map((stat, i) => (
-              <div key={i} className="stat-card">
-                <div className="stat-number">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* About Section */}
       <section className="about-section">
@@ -228,9 +312,51 @@ export default function InfluencerPageTemplate({
         <div className="container">
           <h2>Autres influenceurs food à {city}</h2>
           <p>Découvrez d'autres créateurs de contenu food à {city} disponibles sur BEHYPE pour vos collaborations.</p>
-          <Link href={`/influenceur-food-${city.toLowerCase().replace(/\s+/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`} className="btn-secondary">
-            Voir tous les influenceurs à {city}
-          </Link>
+
+          {influencersByCity[city] && (
+            <div className="other-influencers-grid">
+              {influencersByCity[city]
+                .filter(inf => inf.handle !== handle)
+                .slice(0, 6)
+                .map((inf, i) => (
+                  <Link key={i} href={`/influenceur/${inf.slug}`} className="other-influencer-card">
+                    <span className="other-name">{inf.name}</span>
+                    <span className="other-handle">{inf.handle}</span>
+                  </Link>
+                ))}
+            </div>
+          )}
+
+          <div className="cta-buttons" style={{ marginTop: '32px' }}>
+            <Link href={`/influenceur-food-${city.toLowerCase().replace(/\s+/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`} className="btn-primary">
+              Voir tous les influenceurs à {city}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Other Cities Section */}
+      <section className="cities-section">
+        <div className="container">
+          <h2>Influenceurs food dans les autres villes</h2>
+          <p>Découvrez nos influenceurs food partenaires dans toute la France</p>
+
+          <div className="cities-grid">
+            {[
+              { name: "Paris", slug: "paris" },
+              { name: "Lyon", slug: "lyon" },
+              { name: "Marseille", slug: "marseille" },
+              { name: "Toulouse", slug: "toulouse" },
+              { name: "Nice", slug: "nice" },
+              { name: "Bordeaux", slug: "bordeaux" },
+              { name: "Lille", slug: "lille" },
+              { name: "Nantes", slug: "nantes" }
+            ].filter(c => c.name !== city).slice(0, 6).map((cityItem, i) => (
+              <Link key={i} href={`/influenceur-food-${cityItem.slug}`} className="city-card">
+                <span className="city-name">Influenceurs à {cityItem.name}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -351,79 +477,53 @@ export default function InfluencerPageTemplate({
           flex-wrap: wrap;
         }
 
+        .cta-buttons :global(.btn-primary),
         .btn-primary {
+          display: inline-block;
           padding: 16px 32px;
           background: linear-gradient(135deg, #2465f7 0%, #1d4ed8 100%);
-          color: white;
+          color: white !important;
           border-radius: 12px;
           font-weight: 700;
           font-size: 16px;
-          text-decoration: none;
+          text-decoration: none !important;
           transition: all 0.3s;
           box-shadow: 0 4px 20px rgba(36, 101, 247, 0.3);
+          cursor: pointer;
+          border: none;
         }
 
+        .cta-buttons :global(.btn-primary):hover,
         .btn-primary:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 30px rgba(36, 101, 247, 0.4);
         }
 
-        .btn-primary.large {
+        .btn-primary.large,
+        :global(.btn-primary.large) {
           padding: 20px 48px;
           font-size: 18px;
         }
 
+        .cta-buttons :global(.btn-secondary),
         .btn-secondary {
+          display: inline-block;
           padding: 16px 32px;
           background: white;
-          color: #374151;
+          color: #374151 !important;
           border: 2px solid #e5e7eb;
           border-radius: 12px;
           font-weight: 700;
           font-size: 16px;
-          text-decoration: none;
+          text-decoration: none !important;
           transition: all 0.3s;
+          cursor: pointer;
         }
 
+        .cta-buttons :global(.btn-secondary):hover,
         .btn-secondary:hover {
           border-color: #2465f7;
-          color: #2465f7;
-        }
-
-        /* Stats */
-        .stats-section {
-          padding: 60px 24px;
-          background: white;
-        }
-
-        .stats-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 24px;
-          max-width: 900px;
-          margin: 0 auto;
-        }
-
-        .stat-card {
-          text-align: center;
-          padding: 32px 20px;
-          background: #f8fafc;
-          border-radius: 16px;
-        }
-
-        .stat-number {
-          font-size: 36px;
-          font-weight: 800;
-          background: linear-gradient(135deg, #2465f7, #00d4ff);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          margin-bottom: 8px;
-        }
-
-        .stat-label {
-          font-size: 14px;
-          color: #6b7280;
+          color: #2465f7 !important;
         }
 
         /* About Section */
@@ -655,6 +755,101 @@ export default function InfluencerPageTemplate({
           margin: 0 0 32px 0;
         }
 
+        .other-influencers-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        .other-influencer-card {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          background: #f8fafc;
+          border-radius: 16px;
+          text-decoration: none;
+          transition: all 0.3s;
+          border: 1px solid transparent;
+        }
+
+        .other-influencer-card:hover {
+          background: white;
+          border-color: #2465f7;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(36, 101, 247, 0.15);
+        }
+
+        .other-name {
+          font-weight: 700;
+          color: #1a1a1a;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+
+        .other-handle {
+          font-size: 13px;
+          color: #2465f7;
+          font-weight: 600;
+        }
+
+        /* Cities Section */
+        .cities-section {
+          padding: 80px 24px;
+          background: #f8fafc;
+          text-align: center;
+        }
+
+        .cities-section h2 {
+          font-size: 32px;
+          font-weight: 800;
+          margin: 0 0 16px 0;
+          color: #1a1a1a;
+        }
+
+        .cities-section p {
+          font-size: 18px;
+          color: #6b7280;
+          margin: 0 0 32px 0;
+        }
+
+        .cities-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        .city-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px 24px;
+          background: white;
+          border-radius: 12px;
+          text-decoration: none;
+          transition: all 0.3s;
+          border: 2px solid #e5e7eb;
+        }
+
+        .city-card:hover {
+          border-color: #2465f7;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(36, 101, 247, 0.15);
+        }
+
+        .city-name {
+          font-weight: 700;
+          color: #1a1a1a;
+          font-size: 15px;
+        }
+
+        .city-card:hover .city-name {
+          color: #2465f7;
+        }
+
         /* CTA Section */
         .cta-section {
           padding: 120px 24px;
@@ -717,6 +912,14 @@ export default function InfluencerPageTemplate({
           .btn-primary, .btn-secondary {
             width: 100%;
             text-align: center;
+          }
+
+          .other-influencers-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .cities-grid {
+            grid-template-columns: repeat(2, 1fr);
           }
         }
       `}</style>

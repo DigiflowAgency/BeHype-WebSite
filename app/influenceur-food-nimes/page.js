@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Nîmes - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Nîmes.",
-    url: "https://behype.fr/influenceur-food-nimes",
+    url: "https://be-hype.com/influenceur-food-nimes",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-nimes" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-nimes" },
 }
 
 export default function Page() {

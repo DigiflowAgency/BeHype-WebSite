@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Rouen - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Rouen.",
-    url: "https://behype.fr/influenceur-food-rouen",
+    url: "https://be-hype.com/influenceur-food-rouen",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-rouen" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-rouen" },
 }
 
 export default function Page() {

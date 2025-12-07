@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Orléans - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Orléans.",
-    url: "https://behype.fr/influenceur-food-orleans",
+    url: "https://be-hype.com/influenceur-food-orleans",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-orleans" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-orleans" },
 }
 
 export default function Page() {

@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Le Havre - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Le Havre.",
-    url: "https://behype.fr/influenceur-food-le-havre",
+    url: "https://be-hype.com/influenceur-food-le-havre",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-le-havre" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-le-havre" },
 }
 
 export default function Page() {

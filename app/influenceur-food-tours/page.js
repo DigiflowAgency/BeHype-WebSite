@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Tours - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Tours.",
-    url: "https://behype.fr/influenceur-food-tours",
+    url: "https://be-hype.com/influenceur-food-tours",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-tours" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-tours" },
 }
 
 export default function Page() {

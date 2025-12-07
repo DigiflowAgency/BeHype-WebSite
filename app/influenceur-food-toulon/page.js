@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Toulon - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Toulon.",
-    url: "https://behype.fr/influenceur-food-toulon",
+    url: "https://be-hype.com/influenceur-food-toulon",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-toulon" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-toulon" },
 }
 
 export default function Page() {

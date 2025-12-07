@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Grenoble - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Grenoble.",
-    url: "https://behype.fr/influenceur-food-grenoble",
+    url: "https://be-hype.com/influenceur-food-grenoble",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-grenoble" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-grenoble" },
 }
 
 export default function Page() {

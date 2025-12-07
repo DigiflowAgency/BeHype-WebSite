@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Nancy - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Nancy.",
-    url: "https://behype.fr/influenceur-food-nancy",
+    url: "https://be-hype.com/influenceur-food-nancy",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-nancy" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-nancy" },
 }
 
 export default function Page() {

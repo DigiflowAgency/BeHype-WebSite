@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Angers - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Angers.",
-    url: "https://behype.fr/influenceur-food-angers",
+    url: "https://be-hype.com/influenceur-food-angers",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-angers" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-angers" },
 }
 
 export default function Page() {

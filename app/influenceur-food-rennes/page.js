@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Rennes - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Rennes.",
-    url: "https://behype.fr/influenceur-food-rennes",
+    url: "https://be-hype.com/influenceur-food-rennes",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-rennes" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-rennes" },
 }
 
 export default function Page() {

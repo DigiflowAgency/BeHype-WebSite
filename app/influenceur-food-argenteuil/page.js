@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Argenteuil - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Argenteuil.",
-    url: "https://behype.fr/influenceur-food-argenteuil",
+    url: "https://be-hype.com/influenceur-food-argenteuil",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-argenteuil" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-argenteuil" },
 }
 
 export default function Page() {

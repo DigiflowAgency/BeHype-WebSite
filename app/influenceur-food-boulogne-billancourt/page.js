@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Boulogne-Billancourt - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Boulogne-Billancourt.",
-    url: "https://behype.fr/influenceur-food-boulogne-billancourt",
+    url: "https://be-hype.com/influenceur-food-boulogne-billancourt",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-boulogne-billancourt" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-boulogne-billancourt" },
 }
 
 export default function Page() {

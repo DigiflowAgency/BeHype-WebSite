@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food La Rochelle - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à La Rochelle.",
-    url: "https://behype.fr/influenceur-food-la-rochelle",
+    url: "https://be-hype.com/influenceur-food-la-rochelle",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-la-rochelle" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-la-rochelle" },
 }
 
 export default function Page() {

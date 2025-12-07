@@ -1,4 +1,5 @@
 import CityPageTemplate from '../components/CityPageTemplate'
+import { cityData } from '../data/cityData'
 
 export const metadata = {
   title: "Influenceurs Food Bordeaux - Top Créateurs 2025 | BEHYPE",
@@ -7,17 +8,18 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Bordeaux - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Bordeaux. Boostez la visibilité de votre restaurant.",
-    url: "https://behype.fr/influenceur-food-bordeaux",
+    url: "https://be-hype.com/influenceur-food-bordeaux",
   },
   alternates: {
-    canonical: "https://behype.fr/influenceur-food-bordeaux",
+    canonical: "https://be-hype.com/influenceur-food-bordeaux",
   },
 }
 
 export default function InfluenceurFoodBordeaux() {
   const influencers = [
-    "@bouffdlolo", "@bordeauxfood", "@foodiebordeaux", "@bordeauxgourmand",
-    "@tastybordeaux", "@bordeauxfoodie", "@vinifood33"
+    { name: "Tristan Cuisine", handle: "@tristan_cuisine", slug: "tristan_cuisine" },
+    { name: "Edouard Cuisine", handle: "@edouardcuisine", slug: "edouardcuisine" },
+    { name: "Bordeaux Food Club", handle: "@bordeauxfoodclub", slug: "bordeauxfoodclub" }
   ]
 
   return (
@@ -26,6 +28,7 @@ export default function InfluenceurFoodBordeaux() {
       citySlug="bordeaux"
       region="Nouvelle-Aquitaine"
       influencers={influencers}
+      cityData={cityData["Bordeaux"]}
     />
   )
 }

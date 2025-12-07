@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Strasbourg - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Strasbourg.",
-    url: "https://behype.fr/influenceur-food-strasbourg",
+    url: "https://be-hype.com/influenceur-food-strasbourg",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-strasbourg" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-strasbourg" },
 }
 
 export default function Page() {

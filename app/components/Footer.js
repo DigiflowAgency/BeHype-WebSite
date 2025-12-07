@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <footer className="footer" style={{ background: '#0f172a', color: 'white', padding: '80px 0 40px' }}>
         <div className="footer-content" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>
-          <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '60px', marginBottom: '60px' }}>
+          <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr', gap: '40px', marginBottom: '60px' }}>
             <div className="footer-brand" style={{ maxWidth: '320px' }}>
               <img src="/images/LOGO-BEHYPE-WHITE_1.webp" alt="BEHYPE Logo" style={{ width: '140px', marginBottom: '16px' }} />
               <p className="footer-tagline" style={{ color: '#94a3b8', lineHeight: '1.6', marginBottom: '24px', fontSize: '15px' }}>
@@ -49,6 +49,18 @@ export default function Footer() {
               <Link href="/terms-of-use" prefetch={false} style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Conditions</Link>
               <Link href="/cookies" prefetch={false} style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Cookies</Link>
             </div>
+
+            <div className="footer-links">
+              <h4 style={{ fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '20px', color: 'white' }}>Trouver un influenceur</h4>
+              <Link href="/influenceur-food-paris" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Paris</Link>
+              <Link href="/influenceur-food-lyon" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Lyon</Link>
+              <Link href="/influenceur-food-marseille" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Marseille</Link>
+              <Link href="/influenceur-food-toulouse" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Toulouse</Link>
+              <Link href="/influenceur-food-nice" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Nice</Link>
+              <Link href="/influenceur-food-bordeaux" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Bordeaux</Link>
+              <Link href="/influenceur-food-lille" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Lille</Link>
+              <Link href="/influenceur-food-nantes" style={{ display: 'block', color: '#94a3b8', textDecoration: 'none', marginBottom: '12px', fontSize: '15px', transition: 'color 0.2s' }}>Nantes</Link>
+            </div>
           </div>
 
           <div className="footer-bottom" style={{ paddingTop: '40px', borderTop: '1px solid rgba(255, 255, 255, 0.1)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', textAlign: 'center' }}>
@@ -75,8 +87,8 @@ export default function Footer() {
 
         .footer-grid {
           display: grid;
-          grid-template-columns: 2fr 1fr 1fr 1fr;
-          gap: 60px;
+          grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+          gap: 40px;
           margin-bottom: 60px;
         }
 
@@ -167,10 +179,17 @@ export default function Footer() {
           text-decoration: underline;
         }
 
-        @media (max-width: 968px) {
+        @media (max-width: 1100px) {
+          .footer-grid {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+          }
+        }
+
+        @media (max-width: 768px) {
           .footer-grid {
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            gap: 30px;
           }
         }
 

@@ -1,4 +1,5 @@
 import CityPageTemplate from '../components/CityPageTemplate'
+import { cityData } from '../data/cityData'
 
 export const metadata = {
   title: "Influenceurs Food Nantes - Top Créateurs 2025 | BEHYPE",
@@ -7,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Nantes - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Nantes.",
-    url: "https://behype.fr/influenceur-food-nantes",
+    url: "https://be-hype.com/influenceur-food-nantes",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-nantes" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-nantes" },
 }
 
 export default function Page() {
-  return <CityPageTemplate city="Nantes" citySlug="nantes" region="Pays de la Loire" influencers={["@nantesfood", "@foodienantes", "@nantesgourmand"]} />
+  return <CityPageTemplate city="Nantes" citySlug="nantes" region="Pays de la Loire" influencers={["@nantesfood", "@foodienantes", "@nantesgourmand"]} cityData={cityData["Nantes"]} />
 }

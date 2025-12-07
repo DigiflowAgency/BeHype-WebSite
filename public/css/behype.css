@@ -1219,9 +1219,9 @@
 }
 
 .page_secondary-cta {
-  border: 1px solid var(--elements-webflow-library--neutral--300);
+  border: 2px solid #2465f7;
   background-color: var(--elements-webflow-library--neutral--100);
-  color: var(--elements-webflow-library--neutral--800);
+  color: #2465f7;
   text-align: center;
   transform-style: preserve-3d;
   border-radius: 48px;
@@ -1230,9 +1230,10 @@
   padding: 26px 38px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 18px;
+  font-weight: 600;
   line-height: 20px;
   transition: border-color .3s, transform .3s, background-color .3s, color .3s;
-  box-shadow: 0 4px 10px #14142b0a;
+  box-shadow: 0 4px 10px rgba(36, 101, 247, 0.1);
 }
 
 .page_secondary-cta:hover {
@@ -1307,12 +1308,13 @@
   grid-auto-columns: 1fr;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
+  background-color: var(--flowui-component-library--primary-lighter);
 }
 
 .brix---inner-container-640px---center {
@@ -5031,7 +5033,7 @@
 }
 
 .influenceurs_cta {
-  background-color: var(--elements-webflow-library--accent--primary-1);
+  background: linear-gradient(135deg, #2465f7 0%, #1d50d6 100%);
   color: var(--elements-webflow-library--neutral--100);
   text-align: center;
   transform-style: preserve-3d;
@@ -5043,13 +5045,15 @@
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
-  transition: background-color .3s, transform .3s, color .3s;
+  transition: all .3s ease;
+  box-shadow: 0 8px 24px rgba(36, 101, 247, 0.35);
 }
 
 .influenceurs_cta:hover {
-  background-color: var(--elements-webflow-library--secondary--color-1);
+  background: linear-gradient(135deg, #1d50d6 0%, #1845b8 100%);
   color: var(--elements-webflow-library--neutral--100);
   transform: translate3d(0, -3px, .01px);
+  box-shadow: 0 12px 32px rgba(36, 101, 247, 0.5);
 }
 
 .pricing_mention {

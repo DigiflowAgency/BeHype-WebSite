@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Mulhouse - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Mulhouse.",
-    url: "https://behype.fr/influenceur-food-mulhouse",
+    url: "https://be-hype.com/influenceur-food-mulhouse",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-mulhouse" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-mulhouse" },
 }
 
 export default function Page() {

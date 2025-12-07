@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Antibes - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Antibes.",
-    url: "https://behype.fr/influenceur-food-antibes",
+    url: "https://be-hype.com/influenceur-food-antibes",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-antibes" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-antibes" },
 }
 
 export default function Page() {

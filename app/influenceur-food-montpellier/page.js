@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Montpellier - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Montpellier.",
-    url: "https://behype.fr/influenceur-food-montpellier",
+    url: "https://be-hype.com/influenceur-food-montpellier",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-montpellier" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-montpellier" },
 }
 
 export default function Page() {

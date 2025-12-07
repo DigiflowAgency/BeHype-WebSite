@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Limoges - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Limoges.",
-    url: "https://behype.fr/influenceur-food-limoges",
+    url: "https://be-hype.com/influenceur-food-limoges",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-limoges" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-limoges" },
 }
 
 export default function Page() {

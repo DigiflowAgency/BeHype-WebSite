@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Avignon - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Avignon.",
-    url: "https://behype.fr/influenceur-food-avignon",
+    url: "https://be-hype.com/influenceur-food-avignon",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-avignon" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-avignon" },
 }
 
 export default function Page() {

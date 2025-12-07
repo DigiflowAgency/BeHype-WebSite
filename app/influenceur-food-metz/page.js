@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Metz - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Metz.",
-    url: "https://behype.fr/influenceur-food-metz",
+    url: "https://be-hype.com/influenceur-food-metz",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-metz" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-metz" },
 }
 
 export default function Page() {

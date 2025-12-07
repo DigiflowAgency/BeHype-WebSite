@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Marseille My City (@marseille.my.city) - Influenceur Food Marseille",
     description: "Collaborez avec Marseille My City, média lifestyle et food de la cité phocéenne.",
-    url: "https://behype.fr/influenceur/marseille.my.city",
+    url: "https://be-hype.com/influenceur/marseille.my.city",
   },
-  alternates: { canonical: "https://behype.fr/influenceur/marseille.my.city" },
+  alternates: { canonical: "https://be-hype.com/influenceur/marseille.my.city" },
 }
 
 export default function Page() {
@@ -20,17 +20,10 @@ export default function Page() {
       city="Marseille"
       region="Bouches-du-Rhône"
       instagramUrl="https://instagram.com/marseille.my.city"
-      followers="32K+"
       description="Marseille My City célèbre la cité phocéenne dans toute sa diversité : food, culture, sorties, bons plans. Ce média digital est devenu une référence pour les Marseillais qui veulent profiter pleinement de leur ville et pour les visiteurs qui veulent la découvrir comme des locaux."
       specialty="Marseille My City couvre le lifestyle marseillais sous tous ses angles avec une section food particulièrement développée. Sa force : la connaissance encyclopédique de la ville, quartier par quartier. Les recommandations food s'inscrivent dans un contexte plus large de vie locale, avec des suggestions d'activités complémentaires."
       contentStyle="Le contenu de Marseille My City est varié et professionnel. La section food propose des formats reconnaissables : tops thématiques, découvertes du week-end, ouvertures récentes. Les visuels sont travaillés et cohérents. Le ton est fier et enthousiaste, celui d'amoureux de leur ville qui veulent la faire rayonner."
       whyCollaborate="Marseille My City offre une visibilité massive auprès d'une audience diversifiée de Marseillais et de visiteurs. L'intégration dans un média lifestyle permet de toucher des personnes au-delà du simple intérêt food. Les formats variés permettent des collaborations adaptées à différents objectifs."
-      stats={[
-        { value: "32K+", label: "Followers Instagram" },
-        { value: "5%", label: "Taux d'engagement" },
-        { value: "250+", label: "Adresses food" },
-        { value: "80+", label: "Collaborations" }
-      ]}
       popularContent={[
         { icon: "🌆", title: "Vie marseillaise", description: "Le meilleur de la cité phocéenne au quotidien" },
         { icon: "📋", title: "Tops locaux", description: "Classements des meilleures adresses par catégorie" },

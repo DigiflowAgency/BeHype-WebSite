@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Montreuil - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Montreuil.",
-    url: "https://behype.fr/influenceur-food-montreuil",
+    url: "https://be-hype.com/influenceur-food-montreuil",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-montreuil" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-montreuil" },
 }
 
 export default function Page() {

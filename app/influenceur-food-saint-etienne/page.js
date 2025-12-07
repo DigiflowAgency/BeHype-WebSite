@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Saint-Étienne - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Saint-Étienne.",
-    url: "https://behype.fr/influenceur-food-saint-etienne",
+    url: "https://be-hype.com/influenceur-food-saint-etienne",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-saint-etienne" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-saint-etienne" },
 }
 
 export default function Page() {

@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Biarritz - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Biarritz.",
-    url: "https://behype.fr/influenceur-food-biarritz",
+    url: "https://be-hype.com/influenceur-food-biarritz",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-biarritz" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-biarritz" },
 }
 
 export default function Page() {

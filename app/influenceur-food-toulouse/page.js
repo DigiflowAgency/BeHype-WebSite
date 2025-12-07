@@ -1,4 +1,5 @@
 import CityPageTemplate from '../components/CityPageTemplate'
+import { cityData } from '../data/cityData'
 
 export const metadata = {
   title: "Influenceurs Food Toulouse - Top Créateurs 2025 | BEHYPE",
@@ -7,17 +8,23 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Toulouse - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Toulouse. Boostez la visibilité de votre restaurant.",
-    url: "https://behype.fr/influenceur-food-toulouse",
+    url: "https://be-hype.com/influenceur-food-toulouse",
   },
   alternates: {
-    canonical: "https://behype.fr/influenceur-food-toulouse",
+    canonical: "https://be-hype.com/influenceur-food-toulouse",
   },
 }
 
 export default function InfluenceurFoodToulouse() {
   const influencers = [
-    "@toulousefood", "@foodietoulouse", "@toulousegourmand", "@cassouletlovers",
-    "@tastytoulouse", "@toulousefoodie", "@villerosetable"
+    { name: "Toulouse Food Guide", handle: "@toulouse.foodguide", slug: "toulouse.foodguide" },
+    { name: "Toulouzinzins", handle: "@toulouzinzins", slug: "toulouzinzins" },
+    { name: "Le Bonbon Toulouse", handle: "@le_bonbon_toulouse", slug: "le_bonbon_toulouse" },
+    { name: "Toulouse By Night Fever", handle: "@toulousebynightfever", slug: "toulousebynightfever" },
+    { name: "Epicu Toulouse Food", handle: "@epicutoulouse_food", slug: "epicutoulouse_food" },
+    { name: "La Food Locale", handle: "@lafoodlocale", slug: "lafoodlocale" },
+    { name: "Poodle The Noodle TLS", handle: "@poodlethenoodle.tls", slug: "poodlethenoodle.tls" },
+    { name: "Hey Sisters Toulouse", handle: "@heysisterstoulouse", slug: "heysisterstoulouse" }
   ]
 
   return (
@@ -26,6 +33,7 @@ export default function InfluenceurFoodToulouse() {
       citySlug="toulouse"
       region="Occitanie"
       influencers={influencers}
+      cityData={cityData["Toulouse"]}
     />
   )
 }

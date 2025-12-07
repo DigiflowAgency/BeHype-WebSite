@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Perpignan - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Perpignan.",
-    url: "https://behype.fr/influenceur-food-perpignan",
+    url: "https://be-hype.com/influenceur-food-perpignan",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-perpignan" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-perpignan" },
 }
 
 export default function Page() {

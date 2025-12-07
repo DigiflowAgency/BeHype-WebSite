@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Pages principales -->
   <url>
-    <loc>https://behype.fr/</loc>
+    <loc>https://be-hype.com/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://behype.fr/offres</loc>
+    <loc>https://be-hype.com/offres</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://behype.fr/tarifs</loc>
+    <loc>https://be-hype.com/tarifs</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influencer</loc>
+    <loc>https://be-hype.com/influencer</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://behype.fr/testimonials</loc>
+    <loc>https://be-hype.com/testimonials</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://behype.fr/calendly</loc>
+    <loc>https://be-hype.com/calendly</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -40,31 +40,31 @@
 
   <!-- Pages villes - Tier 1 -->
   <url>
-    <loc>https://behype.fr/influenceur-food-paris</loc>
+    <loc>https://be-hype.com/influenceur-food-paris</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-lyon</loc>
+    <loc>https://be-hype.com/influenceur-food-lyon</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-marseille</loc>
+    <loc>https://be-hype.com/influenceur-food-marseille</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-bordeaux</loc>
+    <loc>https://be-hype.com/influenceur-food-bordeaux</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-toulouse</loc>
+    <loc>https://be-hype.com/influenceur-food-toulouse</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -72,61 +72,61 @@
 
   <!-- Pages villes - Tier 2 -->
   <url>
-    <loc>https://behype.fr/influenceur-food-nice</loc>
+    <loc>https://be-hype.com/influenceur-food-nice</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-nantes</loc>
+    <loc>https://be-hype.com/influenceur-food-nantes</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-lille</loc>
+    <loc>https://be-hype.com/influenceur-food-lille</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-strasbourg</loc>
+    <loc>https://be-hype.com/influenceur-food-strasbourg</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-montpellier</loc>
+    <loc>https://be-hype.com/influenceur-food-montpellier</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-rennes</loc>
+    <loc>https://be-hype.com/influenceur-food-rennes</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-reims</loc>
+    <loc>https://be-hype.com/influenceur-food-reims</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-toulon</loc>
+    <loc>https://be-hype.com/influenceur-food-toulon</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-grenoble</loc>
+    <loc>https://be-hype.com/influenceur-food-grenoble</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-dijon</loc>
+    <loc>https://be-hype.com/influenceur-food-dijon</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -134,61 +134,61 @@
 
   <!-- Pages villes - Tier 3 -->
   <url>
-    <loc>https://behype.fr/influenceur-food-angers</loc>
+    <loc>https://be-hype.com/influenceur-food-angers</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-nimes</loc>
+    <loc>https://be-hype.com/influenceur-food-nimes</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-aix-en-provence</loc>
+    <loc>https://be-hype.com/influenceur-food-aix-en-provence</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-clermont-ferrand</loc>
+    <loc>https://be-hype.com/influenceur-food-clermont-ferrand</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-le-havre</loc>
+    <loc>https://be-hype.com/influenceur-food-le-havre</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-tours</loc>
+    <loc>https://be-hype.com/influenceur-food-tours</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-limoges</loc>
+    <loc>https://be-hype.com/influenceur-food-limoges</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-amiens</loc>
+    <loc>https://be-hype.com/influenceur-food-amiens</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-perpignan</loc>
+    <loc>https://be-hype.com/influenceur-food-perpignan</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-besancon</loc>
+    <loc>https://be-hype.com/influenceur-food-besancon</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -196,91 +196,91 @@
 
   <!-- Pages villes - Tier 4 -->
   <url>
-    <loc>https://behype.fr/influenceur-food-metz</loc>
+    <loc>https://be-hype.com/influenceur-food-metz</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-orleans</loc>
+    <loc>https://be-hype.com/influenceur-food-orleans</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-rouen</loc>
+    <loc>https://be-hype.com/influenceur-food-rouen</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-mulhouse</loc>
+    <loc>https://be-hype.com/influenceur-food-mulhouse</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-caen</loc>
+    <loc>https://be-hype.com/influenceur-food-caen</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-nancy</loc>
+    <loc>https://be-hype.com/influenceur-food-nancy</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-saint-etienne</loc>
+    <loc>https://be-hype.com/influenceur-food-saint-etienne</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-argenteuil</loc>
+    <loc>https://be-hype.com/influenceur-food-argenteuil</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-montreuil</loc>
+    <loc>https://be-hype.com/influenceur-food-montreuil</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-boulogne-billancourt</loc>
+    <loc>https://be-hype.com/influenceur-food-boulogne-billancourt</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-avignon</loc>
+    <loc>https://be-hype.com/influenceur-food-avignon</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-cannes</loc>
+    <loc>https://be-hype.com/influenceur-food-cannes</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-biarritz</loc>
+    <loc>https://be-hype.com/influenceur-food-biarritz</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-la-rochelle</loc>
+    <loc>https://be-hype.com/influenceur-food-la-rochelle</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur-food-antibes</loc>
+    <loc>https://be-hype.com/influenceur-food-antibes</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -288,49 +288,49 @@
 
   <!-- Pages influenceurs individuels - Toulouse -->
   <url>
-    <loc>https://behype.fr/influenceur/toulouse.foodguide</loc>
+    <loc>https://be-hype.com/influenceur/toulouse.foodguide</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/toulouzinzins</loc>
+    <loc>https://be-hype.com/influenceur/toulouzinzins</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/le_bonbon_toulouse</loc>
+    <loc>https://be-hype.com/influenceur/le_bonbon_toulouse</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/toulousebynightfever</loc>
+    <loc>https://be-hype.com/influenceur/toulousebynightfever</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/epicutoulouse_food</loc>
+    <loc>https://be-hype.com/influenceur/epicutoulouse_food</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lafoodlocale</loc>
+    <loc>https://be-hype.com/influenceur/lafoodlocale</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/poodlethenoodle.tls</loc>
+    <loc>https://be-hype.com/influenceur/poodlethenoodle.tls</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/heysisterstoulouse</loc>
+    <loc>https://be-hype.com/influenceur/heysisterstoulouse</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -338,345 +338,821 @@
 
   <!-- Pages influenceurs individuels - Lille -->
   <url>
-    <loc>https://behype.fr/influenceur/2mafourc</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/sortir.lille</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lesbonnesadressesdelille</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/lille.foodguide</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lillefoods</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/foodlilleandco</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lyes.foodgasmic</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/lillefoood</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/sheiina__</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/lille_addict</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/food_louvrier</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/lessortiesdunelilloise</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/mr.bouchetrou</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/plansennord</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/julie.gastronomie</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/le_bonbon_lille</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/agathe.fanny</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/foodlovers_lille</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lena.food.lover</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/koul_halal</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/louise.et.ses.decouvertes</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/halal.food.lille</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Pages influenceurs individuels - Bordeaux -->
   <url>
-    <loc>https://behype.fr/influenceur/marjopapilles</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/tristan_cuisine</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/bordfrenchfood</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/edouardcuisine</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/margauxfoodandtravel</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/bordeauxfoodclub</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Pages influenceurs individuels - Nice/Côte d'Azur -->
   <url>
-    <loc>https://behype.fr/influenceur/nicefoood</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/foodenice</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/food_lovers_nice</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/food.lover.nice</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/foodlovers06</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/saspi.mathieu</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/bonnesadr06</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/ambreverywhere</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/thenicoise</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/cotedazurspots</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/sophie_tables_azureennes</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/valentin.donato</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/mrsbrunchcotedazur</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/nice_foodguide</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/good_food_in_nice</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/welikecotedazur</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/nice_food_addict</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/nature_voyages_decouvertes</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/foodie_nice</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/amour.boire.et.manger</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/uncreuxaubide06</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/nicestorique</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/cotedazur.foodguide</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/remi_ragnar</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/thenicefoodclub</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/twinsb_fit</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/nicefoodadvisor</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/roro_cuistot</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Pages influenceurs individuels - Lyon -->
   <url>
-    <loc>https://behype.fr/influenceur/fringaleslyonnaises</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/cest_cherbon</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/thefoodtrotter_lyon</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/lyontasting</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lyon.map</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/onmangeoualyon</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/foodmoodlyon</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/tuviensmanger</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/bonplanlyon</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/lyonfoodies</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lyoncitycrunch</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/wanna.eatfood</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lyoneats</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/foodbylyon</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/bouffe_et_filles</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/foodetoi_lyon</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/eat_your_lunch_lyon</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/food.lyon</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lyon_ta_mere</loc>
-    <lastmod>2025-12-02</lastmod>
+    <loc>https://be-hype.com/influenceur/monsieur.voyagee</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pages influenceurs individuels - Paris -->
+  <url>
+    <loc>https://be-hype.com/influenceur/__bigwill__</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/agnes.gryz</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/alan_food</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/alexcook.in</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/belaz_spots</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/bonnesadressesdeparis</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/bouffe2lolo</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/cestarpinbon</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/charlene_et_francesca</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/clydewilliams</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/cookwithbash</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/croquelalife</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/detourgourmand</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/doitin_paris</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/don_sido_</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/efoodtour</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/explorernico</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/fitclaire</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/flavienyakoi</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/florianonair</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/foodloverspvris</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/happycook.fr</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/heloise.confidence</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/hungryconsti</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/hunterfood.fr</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/isma_labrigade</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/jessetmilan</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/kenousdiary</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/ladyjoe_</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/lagrande_bouffe</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/le_couteau</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/lefoodbob</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/leguideultime</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/lemondedechoi</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/leparisdalexis</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/leparisdenamy</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/leparisfoodalex</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/lerequin92officiel</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/lerizjaune</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/lestreetfoodist</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/lolwla</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/louloukitchen_</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/malcoms.food</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/manger.parisien</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/micharretedemanger</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/mr.nouilles_</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/my.bouffe</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/newtable_paris</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/niangcook</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/nonofoodies_</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/onigiri.spicy</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/onmangequoi.fr</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/paname_in_my_belly</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/panameafaim</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/parisbymike</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/parisimmersif</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/parisinsiderfood</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/parisismykitchen</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/parissecret</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/pariswithcharlotte</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/pariszigzag</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/pazapah</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/poopiblh</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/popcorn.paris</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/restaurant_parisien</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/resto.halal</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/revealyourfoodie</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/riccifamily_</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/sorties.paris</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/spicynoemie</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/strop_bon</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/tft_discovery</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/the_foodologiste</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/theovoyageurgourmand</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/theparisfoodguide</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/to.fourneau</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/topparisresto</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/vanessabesnard</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://be-hype.com/influenceur/yanman_1.54</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Pages influenceurs individuels - Marseille/PACA -->
   <url>
-    <loc>https://behype.fr/influenceur/foodmarseille</loc>
+    <loc>https://be-hype.com/influenceur/foodmarseille</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/marseille_bon_plan</loc>
+    <loc>https://be-hype.com/influenceur/marseille_bon_plan</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/chezdeborah</loc>
+    <loc>https://be-hype.com/influenceur/chezdeborah</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/foodmars13</loc>
+    <loc>https://be-hype.com/influenceur/foodmars13</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/thebibendummarseille</loc>
+    <loc>https://be-hype.com/influenceur/thebibendummarseille</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/le_food_reporter_marseillais</loc>
+    <loc>https://be-hype.com/influenceur/le_food_reporter_marseillais</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/ilovefoodeuh</loc>
+    <loc>https://be-hype.com/influenceur/ilovefoodeuh</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/marseille.my.city</loc>
+    <loc>https://be-hype.com/influenceur/marseille.my.city</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/onmangeoumer</loc>
+    <loc>https://be-hype.com/influenceur/onmangeoumer</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/uncreuxaubide13</loc>
+    <loc>https://be-hype.com/influenceur/uncreuxaubide13</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/marseille_bonnes_adresses</loc>
+    <loc>https://be-hype.com/influenceur/marseille_bonnes_adresses</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/foodie_marseille</loc>
+    <loc>https://be-hype.com/influenceur/foodie_marseille</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/provencegourmande</loc>
+    <loc>https://be-hype.com/influenceur/provencegourmande</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/aixenprovence.foodie</loc>
+    <loc>https://be-hype.com/influenceur/aixenprovence.foodie</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/bouches_du_rhone_food</loc>
+    <loc>https://be-hype.com/influenceur/bouches_du_rhone_food</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/toprestospaca</loc>
+    <loc>https://be-hype.com/influenceur/toprestospaca</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/marseille_food_lover</loc>
+    <loc>https://be-hype.com/influenceur/marseille_food_lover</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://behype.fr/influenceur/lagoodnewsmarseille</loc>
+    <loc>https://be-hype.com/influenceur/lagoodnewsmarseille</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -684,25 +1160,25 @@
 
   <!-- Pages légales -->
   <url>
-    <loc>https://behype.fr/mentions-legales</loc>
+    <loc>https://be-hype.com/mentions-legales</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://behype.fr/privacy-policy</loc>
+    <loc>https://be-hype.com/privacy-policy</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://behype.fr/terms-of-use</loc>
+    <loc>https://be-hype.com/terms-of-use</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://behype.fr/cookies</loc>
+    <loc>https://be-hype.com/cookies</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

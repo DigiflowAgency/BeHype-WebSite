@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Caen - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Caen.",
-    url: "https://behype.fr/influenceur-food-caen",
+    url: "https://be-hype.com/influenceur-food-caen",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-caen" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-caen" },
 }
 
 export default function Page() {

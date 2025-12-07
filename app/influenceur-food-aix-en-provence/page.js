@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Aix-en-Provence - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Aix-en-Provence.",
-    url: "https://behype.fr/influenceur-food-aix-en-provence",
+    url: "https://be-hype.com/influenceur-food-aix-en-provence",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-aix-en-provence" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-aix-en-provence" },
 }
 
 export default function Page() {

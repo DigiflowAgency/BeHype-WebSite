@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Dijon - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Dijon.",
-    url: "https://behype.fr/influenceur-food-dijon",
+    url: "https://be-hype.com/influenceur-food-dijon",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-dijon" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-dijon" },
 }
 
 export default function Page() {

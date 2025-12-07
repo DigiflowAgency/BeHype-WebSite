@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Besançon - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Besançon.",
-    url: "https://behype.fr/influenceur-food-besancon",
+    url: "https://be-hype.com/influenceur-food-besancon",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-besancon" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-besancon" },
 }
 
 export default function Page() {

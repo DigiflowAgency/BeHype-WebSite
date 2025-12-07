@@ -7,9 +7,9 @@ export const metadata = {
   openGraph: {
     title: "Influenceurs Food Amiens - Top Créateurs 2025",
     description: "Découvrez les meilleurs influenceurs food à Amiens.",
-    url: "https://behype.fr/influenceur-food-amiens",
+    url: "https://be-hype.com/influenceur-food-amiens",
   },
-  alternates: { canonical: "https://behype.fr/influenceur-food-amiens" },
+  alternates: { canonical: "https://be-hype.com/influenceur-food-amiens" },
 }
 
 export default function Page() {
