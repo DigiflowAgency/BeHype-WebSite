@@ -14,13 +14,14 @@ export const metadata = {
 }
 
 export default function Page() {
+  // Vrais influenceurs food à Nantes (comptes Instagram vérifiés)
   const influencers = [
-    { name: "Nantes Food", handle: "@nantesfood", slug: "nantesfood" },
-    { name: "Foodie Nantes", handle: "@foodienantes", slug: "foodienantes" },
-    { name: "Nantes Gourmand", handle: "@nantesgourmand", slug: "nantesgourmand" },
-    { name: "LNH Nantes", handle: "@lnh_nantes", slug: "lnh_nantes" },
-    { name: "Nantes Food Guide", handle: "@nantes_food_guide", slug: "nantes_food_guide" },
-    { name: "Bon Appétit Nantes", handle: "@bonappetit_nantes", slug: "bonappetit_nantes" }
+    { name: "Nantes Food Guide", handle: "@nantes_foodguide" },
+    { name: "Nantes Foodie", handle: "@nantesfoodie" },
+    { name: "Barbidule 44", handle: "@barbidule44" },
+    { name: "Les Tables de Nantes", handle: "@lestablesdenantes.officiel" },
+    { name: "Nantes Végétal", handle: "@nantesvegetal" },
+    { name: "Caroline", handle: "@carolineovrd" }
   ]
 
   return (
