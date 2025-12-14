@@ -53,7 +53,6 @@ jobs:
 
           # Redémarrer PM2
           pm2 restart "$APP_NAME" --update-env || pm2 start npm --name "$APP_NAME" -- start
-          pm2 save
 
           echo "✅ Déploiement Infomaniak terminé!"
 
@@ -104,6 +103,5 @@ jobs:
 
           # Redémarrer PM2
           pm2 restart "$APP_NAME" --update-env || pm2 start npm --name "$APP_NAME" -- start
-          pm2 save
 
           echo "✅ Déploiement OVH terminé!"
